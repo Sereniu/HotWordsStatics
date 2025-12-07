@@ -39,25 +39,17 @@ bool PreProcessor::loadStopWords(const string& filepath){
             stopWords.insert(word);
             count++;
         }
-
-        file.close();
-        cout<< "[PreProcessor] Loaded " << count << " stopwords" << endl;
-        return true;
     }
-}
 
-bool PreProcessor::isPunctuation(char c){
-    return (c == ',' || c == '.' || c == '!' || c == '?' || 
-            c == ';' || c == ':' || c == '"' || c == '\'' ||
-            c == '(' || c == ')' || c == '[' || c == ']' ||
-            c == '{' || c == '}' || c == '-' || c == '_' ||
-            c == '/' || c == '\\' || c == '|');
+    file.close();
+    cout<< "[PreProcessor] Loaded " << count << " stopwords" << endl;
+    return true;
 }
 
 string PreProcessor::cleanWord(const string& word){
     string cleaned;
     for(char c:word){
-        if(!isPunctuation(c) && !isspace(c)){
+        if(!isspace(c)){
             cleaned+=c;
         }
     }

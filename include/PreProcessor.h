@@ -20,7 +20,6 @@ class PreProcessor{
     unordered_set<string> stopWords;
 
     //辅助函数
-    bool  isPunctuation(char c);
     string cleanWord(const string& word);
 
     public:

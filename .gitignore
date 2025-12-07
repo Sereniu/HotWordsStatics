@@ -1,0 +1,6 @@
+# 过滤Vim/编辑器临时文件
+*.swp
+*.un~
+*~
+# 可选：过滤可执行文件（如果 test_preprocessor 是编译产物，建议不提交）
+# test_preprocessor
