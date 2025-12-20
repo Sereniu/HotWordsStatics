@@ -3,10 +3,10 @@
 #include <cmath>
 #include "spdlog/spdlog.h"
 
-SlidingWindow::SlidingWindow(unsigned int window_size):window_size_(window_size){
+SlidingWindow::SlidingWindow(unsigned int window_size,unsigned int max_delay):window_size_(window_size),max_delay_(max_delay){
     spdlog::info("=== SlidingWindow Initialized ===");
-    spdlog::info("Window size: {} seconds ({} minutes)", 
-                 window_size_, window_size_ / 60);
+    spdlog::info("Window size: {} seconds ({} minutes) Delay time: {} seconds ({} minutes) )", 
+                 window_size_, window_size_ / 60,max_delay_,max_delay_/60);
 }
 
 void SlidingWindow::addData(const TimeSlot &data)
@@ -14,13 +14,24 @@ void SlidingWindow::addData(const TimeSlot &data)
     auto start_time = std::chrono::high_resolution_clock::now();
     std::lock_guard<std::mutex> lock(mutex_);
 
-    curtime = std::max(curtime, data.timestamp);
     unsigned int ts=data.timestamp;
 
-    if (ts < curtime) {
-        spdlog::warn("Late data detected! data_time={}, current_time={}, lag={}s", 
-                     ts, curtime, curtime - ts);
+    if (ts > max_event_time) {
+        max_event_time=ts;
+        processDelayedData();
     }
+
+    // 丢弃过旧数据
+    if(max_event_time>ts+max_delay_){
+        spdlog::warn("SlidingWindow  Data too late: " + std::to_string(ts) + " vs current: " + std::to_string(max_event_time));
+        return;  
+    }
+
+    if(ts < max_event_time){
+        delayed_buffer_[ts].insert(delayed_buffer_[ts].end(),data.words.begin(),data.words.end());
+        return;
+    }
+
     // 累加当前时间槽中的词频
     for (const auto& word : data.words) {
     ++word_count_[word];
@@ -33,8 +44,8 @@ void SlidingWindow::addData(const TimeSlot &data)
         time_index_[ts].insert(time_index_[ts].end(),data.words.begin(),data.words.end());
     }
 
-    // 淘汰过期数据（以 curtime 为基准）
-    evictExpiredData(curtime);
+    // 淘汰过期数据（以 max_event_time 为基准）
+    evictExpiredData(max_event_time);
 
     auto end_time = std::chrono::high_resolution_clock::now();
     auto duration_ms = std::chrono::duration<double, std::milli>(end_time - start_time).count();
@@ -52,11 +63,15 @@ void SlidingWindow::addData(const TimeSlot &data)
 }
 
 //查询时要先同步一下窗口
-std::vector<std::pair<std::string, int>> SlidingWindow::getTopK(int k) const
-{
+std::vector<std::pair<std::string, int>> SlidingWindow::getTopK(int k)
+{   
     auto start_time = std::chrono::high_resolution_clock::now();
 
     std::lock_guard<std::mutex> lock(mutex_);
+
+    //处理还没有处理的迟到timeslot
+    processDelayedData();
+
     // 【异常处理】检查 K 值合法性
     if (k <= 0) {
         spdlog::warn("Invalid K value: {}, reset to default K=10", k);
@@ -80,7 +95,7 @@ std::vector<std::pair<std::string, int>> SlidingWindow::getTopK(int k) const
     result.resize(k);
     }
 
-     auto end_time = std::chrono::high_resolution_clock::now();
+    auto end_time = std::chrono::high_resolution_clock::now();
     auto duration_ms = std::chrono::duration<double, std::milli>(end_time - start_time).count();
     
     auto perf_logger = spdlog::get("perf");
@@ -114,17 +129,17 @@ size_t SlidingWindow::getTotalWords() const
 size_t SlidingWindow::getUniqueWords() const
 {
     std::lock_guard<std::mutex> lock(mutex_);
-    return word_count_.size();return size_t();
+    return word_count_.size();
 }
 
 unsigned int SlidingWindow::currentTime() const
 {
-    return curtime;
+    return max_event_time;
 }
 
-void SlidingWindow::evictExpiredData(unsigned int curtime)
+void SlidingWindow::evictExpiredData(unsigned int max_event_time)
 {
-    unsigned int expire_time = (curtime > window_size_)? (curtime - window_size_): 0;
+    unsigned int expire_time = (max_event_time > window_size_)? (max_event_time - window_size_): 0;
 
 
     // map 是按时间戳升序排列的，方便从最早时间开始淘汰
@@ -167,4 +182,30 @@ size_t SlidingWindow::estimateMemoryUsage() const
     }
     
     return memory;
+}
+
+void SlidingWindow::processDelayedData() 
+{   
+   
+    for (auto it = delayed_buffer_.begin(); it != delayed_buffer_.end();) {
+        unsigned int ts = it->first;
+        
+        // 检查是否在窗口内
+        if (ts >= max_event_time - window_size_) {
+            // 合并到时间索引
+            for (const auto& word : it->second) {
+                ++word_count_[word];
+            }
+            
+            time_index_[ts].insert(
+                time_index_[ts].end(),
+                it->second.begin(),
+                it->second.end()
+            );
+            
+            it = delayed_buffer_.erase(it);
+        } else {
+            ++it;
+        }
+    }
 }

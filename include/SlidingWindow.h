@@ -5,23 +5,29 @@
 #include <unordered_map>
 #include <map>
 #include <mutex>
-
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
 
 class SlidingWindow {
 private:
-    std::unordered_map<std::string, int> word_count_;
-    std::map<unsigned int, std::vector<std::string>> time_index_;
+    unordered_map<string, int> word_count_;
+    map<unsigned int, vector<string>> time_index_;
     unsigned int window_size_;
-    unsigned int curtime=0;
-    mutable std::mutex mutex_;
+    unsigned int max_event_time=0;//最大事件时间，即确保没有迟到的数据比其先到
+    unsigned int max_delay_=60;//允许迟到1分钟
+    map<unsigned int,vector<string>> delayed_buffer_;//延迟数据缓冲区
+    mutable mutex mutex_;
     
 public:
 
     /**
     * 构造函数
     * @param window_size 滑动窗口大小（秒），默认 600 秒（10 分钟）
+    * @param max_delay 最大延迟时间（秒），默认 60 秒（1 分钟）
     */
-    explicit SlidingWindow(unsigned int window_size = 600);
+    explicit SlidingWindow(unsigned int window_size = 600,unsigned int max_delay=60);
     
     /**
     * 向滑动窗口中加入一个时间槽的数据
@@ -46,12 +52,12 @@ public:
     * @param k Top-K 中的 K 值
     * @return 词频对 (word, count) 的列表
     */
-    std::vector<std::pair<std::string, int>> getTopK(int k) const;
+    vector<pair<string, int>> getTopK(int k);
     
     /**
     * 获取某个词在当前窗口内的出现次数
     */
-    int getWordCount(const std::string& word) const;
+    int getWordCount(const string& word) const;
 
     /**
     * 获取窗口内的总词数（含重复）
@@ -77,14 +83,17 @@ private:
     * - 若某个时间戳 < current_time - window_size_
     * - 则该时间槽内的所有词都需要从 word_count_ 中减去
     *
-    * @param curtime 当前最新数据的时间戳
+    * @param max_event_time 当前最新数据的时间戳
     */
-    void evictExpiredData(unsigned int curtime);
+    void evictExpiredData(unsigned int max_event_time);
 
     /**
     * 对某个词进行词频递减，若减到 0 则删除
     */
-    void decrementWord(const std::string& word);
+    void decrementWord(const string& word);
+
+    //处理过旧数据
+    void processDelayedData();
 };
 
 #endif 
