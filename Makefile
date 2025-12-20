@@ -2,12 +2,13 @@
 
 #定义变量
 CXX=g++  #编译器
-CXXFLAGS=-std=c++17 -Wall -O2 -pthread  #编译选项
+CXXFLAGS=-std=c++17 -O2 -pthread  #编译选项
 # -std=c++17：使用 C++17 标准
 # -Wall：显示所有警告
 # -O2：优化级别2（0=无优化，1=基本，2=标准，3=激进）
 # -pthread：支持多线程（等价于 -lpthread）
 INCLUDES= -I./include  #头文件搜索路径
+LDFLAGS= -lspdlog 
 SRC_DIR=src#目录变量
 BIN_DIR=bin
 
@@ -28,19 +29,32 @@ TARGET=$(BIN_DIR)/hotword_system
 #第一个目标：make or make all
 all: dirs $(TARGET)
 
+debug: CXXFLAGS += -DDEBUG_MODE
+debug:all
+
 dirs:
 	@mkdir -p $(BIN_DIR) #创建bin目录
 
 #编译主程序
 $(TARGET): $(SOURCES)
-	$(CXX) $(CXXFLAGS) $(INCLUDES) $(SOURCES) -o $(TARGET)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(SOURCES) -o $(TARGET) $(LDFLAGS)
 	@echo "✓ 编译完成: $(TARGET)"
 # g++ -std=c++17 -Wall -O2 -pthread -I./src src/main.cpp ... -o bin/hotword_system
 
-#运行程序
-run: $(TARGET)
+#运行程序1
+run1: $(TARGET)
 	@echo "运行程序..."
 	@cd $(BIN_DIR) && ./hotword_system input1.txt output1.txt
+
+#运行程序2
+run2: $(TARGET)
+	@echo "运行程序..."
+	@cd $(BIN_DIR) && ./hotword_system input2.txt output2.txt
+
+#运行程序3
+run3: $(TARGET)
+	@echo "运行程序..."
+	@cd $(BIN_DIR) && ./hotword_system input3.txt output3.txt
 
 #批量处理文件
 run_all: $(TARGET)
@@ -69,7 +83,9 @@ help:
 	@echo ""
 	@echo "使用方法:"
 	@echo "  make          - 编译程序"
-	@echo "  make run      - 编译并运行 input1.txt"
+	@echo "  make run1     - 编译并运行 input1.txt"
+	@echo "  make run2     - 编译并运行 input2.txt"
+	@echo "  make run3     - 编译并运行 input3.txt"
 	@echo "  make run_all  - 批量处理所有输入文件"
 	@echo "  make clean    - 清理编译文件"
 	@echo "  make help     - 显示帮助"
