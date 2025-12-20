@@ -1,0 +1,1544 @@
+[2025-12-20 14:28:08.355] [info] =================================================
+[2025-12-20 14:28:08.355] [info] Hot Word Statistics System Starting
+[2025-12-20 14:28:08.355] [info] Input file: ../data/input1.txt
+[2025-12-20 14:28:08.355] [info] Output file: ../data/output1.txt
+[2025-12-20 14:28:08.355] [info] Creating HotWordSystem instance...
+[2025-12-20 14:28:08.355] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 14:28:08.355] [info] === SlidingWindow Initialized ===
+[2025-12-20 14:28:08.355] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 14:28:08.355] [info] QueryHandler initialized: output_file=../data/output1.txt
+[2025-12-20 14:28:08.355] [info] =================================================
+[2025-12-20 14:28:08.355] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 14:28:08.355] [info] =================================================
+[2025-12-20 14:28:08.355] [info] Configuration:
+[2025-12-20 14:28:08.355] [info]   Input file:       ../data/input1.txt
+[2025-12-20 14:28:08.355] [info]   Output file:      ../data/output1.txt
+[2025-12-20 14:28:08.355] [info]   Buffer capacity:  300
+[2025-12-20 14:28:08.355] [info]   Low watermark:    60
+[2025-12-20 14:28:08.355] [info]   Window size:      600s (10min)
+[2025-12-20 14:28:08.355] [info]   Stat threads:     1
+[2025-12-20 14:28:08.355] [info] Creating InputThread...
+[2025-12-20 14:28:08.355] [info] === InputThread Initializing ===
+[2025-12-20 14:28:08.355] [info] Input file: ../data/input1.txt
+[2025-12-20 14:28:08.355] [info] Batch size: 100
+[2025-12-20 14:28:08.355] [info] InputHandler initialized: input_file=../data/input1.txt
+[2025-12-20 14:28:08.355] [info] === TextProcessor Initializing ===
+[2025-12-20 14:28:08.355] [info] Dictionary path: ../dict/
+[2025-12-20 14:28:08.355] [info] POS filter: Enabled
+[2025-12-20 14:28:09.054] [info] Valid POS tags loaded: 15 types
+[2025-12-20 14:28:09.054] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 14:28:09.054] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 14:28:09.063] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 14:28:09.063] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 14:28:09.063] [info] Stop words count: 1280
+[2025-12-20 14:28:09.063] [info] Sensitive words count: 41326
+[2025-12-20 14:28:09.063] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 14:28:09.063] [info] InputThread created successfully
+[2025-12-20 14:28:09.063] [info] Creating 1 StatisticsThreads...
+[2025-12-20 14:28:09.063] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 14:28:09.063] [info] 1 StatisticsThreads created successfully
+[2025-12-20 14:28:09.063] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 14:28:09.063] [info] =================================================
+[2025-12-20 14:28:09.063] [info] HotWordSystem created successfully
+[2025-12-20 14:28:09.063] [info] =================================================
+[2025-12-20 14:28:09.063] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 14:28:09.063] [info] =================================================
+[2025-12-20 14:28:09.063] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 14:28:09.063] [info] System is now running...
+[2025-12-20 14:28:09.063] [info] =================================================
+[2025-12-20 14:28:09.063] [info] =================================================
+[2025-12-20 14:28:09.063] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 14:28:09.063] [info] =================================================
+[2025-12-20 14:28:09.063] [info] Waiting for InputThread to finish...
+[2025-12-20 14:28:09.063] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 14:28:09.063] [info] >>> InputThread Started <<<
+[2025-12-20 14:28:09.063] [info] Input file opened successfully: ../data/input1.txt
+[2025-12-20 14:28:09.116] [info] Query command received: timestamp=267, K=6
+[2025-12-20 14:28:09.123] [info] Output file opened successfully: ../data/output1.txt
+[2025-12-20 14:28:09.166] [info] Query command received: timestamp=496, K=4
+[2025-12-20 14:28:09.207] [info] Query command received: timestamp=758, K=7
+[2025-12-20 14:28:09.215] [info] Query command received: timestamp=807, K=3
+[2025-12-20 14:28:09.328] [info] Query command received: timestamp=1350, K=2
+[2025-12-20 14:28:09.366] [info] Query command received: timestamp=1540, K=3
+[2025-12-20 14:28:09.439] [info] Query command received: timestamp=1712, K=5
+[2025-12-20 14:28:09.557] [info] Query command received: timestamp=2286, K=6
+[2025-12-20 14:28:09.629] [info] Query command received: timestamp=2509, K=10
+[2025-12-20 14:28:09.706] [info] Query command received: timestamp=2849, K=6
+[2025-12-20 14:28:09.744] [info] Query command received: timestamp=2971, K=2
+[2025-12-20 14:28:09.780] [info] Query command received: timestamp=3102, K=2
+[2025-12-20 14:28:09.940] [info] Query command received: timestamp=3638, K=5
+[2025-12-20 14:28:10.060] [info] Query command received: timestamp=4309, K=3
+[2025-12-20 14:28:10.149] [info] Query command received: timestamp=4610, K=1
+[2025-12-20 14:28:10.184] [info] Query command received: timestamp=4811, K=4
+[2025-12-20 14:28:10.184] [info] InputThread: Submitting remaining 77 items in batch
+[2025-12-20 14:28:10.185] [info] Input file closed
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] ===       InputThread Statistics              ===
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] Total lines:        12870
+[2025-12-20 14:28:10.185] [info] Text lines:         12854
+[2025-12-20 14:28:10.185] [info] Query lines:        16
+[2025-12-20 14:28:10.185] [info] Total words:        41410
+[2025-12-20 14:28:10.185] [info] Avg words/text:     3.22
+[2025-12-20 14:28:10.185] [info] Total duration:     1.12s
+[2025-12-20 14:28:10.185] [info] Overall throughput: 11480.10 lines/sec
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] <<< InputThread Terminated <<<
+[2025-12-20 14:28:10.185] [info] InputThread terminated
+[2025-12-20 14:28:10.185] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 14:28:10.185] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] Processed slots:    6088
+[2025-12-20 14:28:10.185] [info] Processed queries:  0
+[2025-12-20 14:28:10.185] [info] Total duration:     1.12s
+[2025-12-20 14:28:10.185] [info] Overall throughput: 5428.65 slots/sec
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 14:28:10.185] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] Processing completed successfully
+[2025-12-20 14:28:10.185] [info] Total duration: 1829 ms
+[2025-12-20 14:28:10.185] [info] Output file: ../data/output1.txt
+[2025-12-20 14:28:10.185] [info] =================================================
+[2025-12-20 14:28:10.185] [info] Shutting down logger system...
+[2025-12-20 14:28:10.308] [info] Output file closed
+[2025-12-20 14:28:29.401] [info] =================================================
+[2025-12-20 14:28:29.401] [info] Hot Word Statistics System Starting
+[2025-12-20 14:28:29.401] [info] Input file: ../data/input2.txt
+[2025-12-20 14:28:29.401] [info] Output file: ../data/output3.txt
+[2025-12-20 14:28:29.401] [info] Creating HotWordSystem instance...
+[2025-12-20 14:28:29.401] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 14:28:29.401] [info] === SlidingWindow Initialized ===
+[2025-12-20 14:28:29.401] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 14:28:29.401] [info] QueryHandler initialized: output_file=../data/output3.txt
+[2025-12-20 14:28:29.401] [info] =================================================
+[2025-12-20 14:28:29.401] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 14:28:29.401] [info] =================================================
+[2025-12-20 14:28:29.401] [info] Configuration:
+[2025-12-20 14:28:29.401] [info]   Input file:       ../data/input2.txt
+[2025-12-20 14:28:29.401] [info]   Output file:      ../data/output3.txt
+[2025-12-20 14:28:29.401] [info]   Buffer capacity:  300
+[2025-12-20 14:28:29.401] [info]   Low watermark:    60
+[2025-12-20 14:28:29.401] [info]   Window size:      600s (10min)
+[2025-12-20 14:28:29.401] [info]   Stat threads:     1
+[2025-12-20 14:28:29.401] [info] Creating InputThread...
+[2025-12-20 14:28:29.401] [info] === InputThread Initializing ===
+[2025-12-20 14:28:29.401] [info] Input file: ../data/input2.txt
+[2025-12-20 14:28:29.401] [info] Batch size: 100
+[2025-12-20 14:28:29.401] [info] InputHandler initialized: input_file=../data/input2.txt
+[2025-12-20 14:28:29.401] [info] === TextProcessor Initializing ===
+[2025-12-20 14:28:29.401] [info] Dictionary path: ../dict/
+[2025-12-20 14:28:29.401] [info] POS filter: Enabled
+[2025-12-20 14:28:30.176] [info] Valid POS tags loaded: 15 types
+[2025-12-20 14:28:30.176] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 14:28:30.177] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 14:28:30.193] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 14:28:30.193] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 14:28:30.193] [info] Stop words count: 1280
+[2025-12-20 14:28:30.193] [info] Sensitive words count: 41326
+[2025-12-20 14:28:30.193] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 14:28:30.193] [info] InputThread created successfully
+[2025-12-20 14:28:30.193] [info] Creating 1 StatisticsThreads...
+[2025-12-20 14:28:30.193] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 14:28:30.193] [info] 1 StatisticsThreads created successfully
+[2025-12-20 14:28:30.193] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 14:28:30.193] [info] =================================================
+[2025-12-20 14:28:30.193] [info] HotWordSystem created successfully
+[2025-12-20 14:28:30.193] [info] =================================================
+[2025-12-20 14:28:30.193] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 14:28:30.193] [info] =================================================
+[2025-12-20 14:28:30.193] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 14:28:30.193] [info] System is now running...
+[2025-12-20 14:28:30.193] [info] =================================================
+[2025-12-20 14:28:30.193] [info] =================================================
+[2025-12-20 14:28:30.193] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 14:28:30.193] [info] =================================================
+[2025-12-20 14:28:30.193] [info] Waiting for InputThread to finish...
+[2025-12-20 14:28:30.193] [info] >>> InputThread Started <<<
+[2025-12-20 14:28:30.193] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 14:28:30.193] [info] Input file opened successfully: ../data/input2.txt
+[2025-12-20 14:28:30.222] [info] Query command received: timestamp=37, K=2
+[2025-12-20 14:28:30.228] [info] Output file opened successfully: ../data/output3.txt
+[2025-12-20 14:28:30.391] [info] Query command received: timestamp=679, K=5
+[2025-12-20 14:28:30.449] [info] Query command received: timestamp=918, K=6
+[2025-12-20 14:28:30.550] [info] Query command received: timestamp=1409, K=3
+[2025-12-20 14:28:30.629] [info] Query command received: timestamp=1856, K=3
+[2025-12-20 14:28:30.766] [info] Query command received: timestamp=2564, K=1
+[2025-12-20 14:28:30.897] [info] Query command received: timestamp=3061, K=7
+[2025-12-20 14:28:31.007] [info] Query command received: timestamp=3683, K=4
+[2025-12-20 14:28:31.103] [info] Query command received: timestamp=4127, K=4
+[2025-12-20 14:28:31.108] [info] Query command received: timestamp=4168, K=4
+[2025-12-20 14:28:31.118] [info] Query command received: timestamp=4240, K=4
+[2025-12-20 14:28:31.192] [info] Query command received: timestamp=4622, K=5
+[2025-12-20 14:28:31.236] [info] Query command received: timestamp=4802, K=3
+[2025-12-20 14:28:31.236] [info] InputThread: Submitting remaining 67 items in batch
+[2025-12-20 14:28:31.236] [info] Input file closed
+[2025-12-20 14:28:31.236] [info] =================================================
+[2025-12-20 14:28:31.236] [info] ===       InputThread Statistics              ===
+[2025-12-20 14:28:31.236] [info] =================================================
+[2025-12-20 14:28:31.236] [info] Total lines:        11698
+[2025-12-20 14:28:31.236] [info] Text lines:         11685
+[2025-12-20 14:28:31.236] [info] Query lines:        13
+[2025-12-20 14:28:31.236] [info] Total words:        38947
+[2025-12-20 14:28:31.236] [info] Avg words/text:     3.33
+[2025-12-20 14:28:31.236] [info] Total duration:     1.04s
+[2025-12-20 14:28:31.236] [info] Overall throughput: 11209.00 lines/sec
+[2025-12-20 14:28:31.236] [info] =================================================
+[2025-12-20 14:28:31.236] [info] <<< InputThread Terminated <<<
+[2025-12-20 14:28:31.236] [info] InputThread terminated
+[2025-12-20 14:28:31.236] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 14:28:31.236] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 14:28:31.236] [info] =================================================
+[2025-12-20 14:28:31.236] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 14:28:31.236] [info] =================================================
+[2025-12-20 14:28:31.236] [info] Processed slots:    5633
+[2025-12-20 14:28:31.236] [info] Processed queries:  0
+[2025-12-20 14:28:31.236] [info] Total duration:     1.04s
+[2025-12-20 14:28:31.236] [info] Overall throughput: 5397.11 slots/sec
+[2025-12-20 14:28:31.236] [info] =================================================
+[2025-12-20 14:28:31.236] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 14:28:31.237] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 14:28:31.237] [info] =================================================
+[2025-12-20 14:28:31.237] [info] =================================================
+[2025-12-20 14:28:31.237] [info] Processing completed successfully
+[2025-12-20 14:28:31.237] [info] Total duration: 1835 ms
+[2025-12-20 14:28:31.237] [info] Output file: ../data/output3.txt
+[2025-12-20 14:28:31.237] [info] =================================================
+[2025-12-20 14:28:31.237] [info] Shutting down logger system...
+[2025-12-20 14:28:31.373] [info] Output file closed
+[2025-12-20 14:28:44.326] [info] =================================================
+[2025-12-20 14:28:44.326] [info] Hot Word Statistics System Starting
+[2025-12-20 14:28:44.326] [info] Input file: ../data/../data/input1.txt
+[2025-12-20 14:28:44.326] [info] Output file: ../data/../data/output1.txt
+[2025-12-20 14:28:44.326] [info] Creating HotWordSystem instance...
+[2025-12-20 14:28:44.326] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 14:28:44.326] [info] === SlidingWindow Initialized ===
+[2025-12-20 14:28:44.326] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 14:28:44.326] [info] QueryHandler initialized: output_file=../data/../data/output1.txt
+[2025-12-20 14:28:44.326] [info] =================================================
+[2025-12-20 14:28:44.326] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 14:28:44.326] [info] =================================================
+[2025-12-20 14:28:44.326] [info] Configuration:
+[2025-12-20 14:28:44.326] [info]   Input file:       ../data/../data/input1.txt
+[2025-12-20 14:28:44.326] [info]   Output file:      ../data/../data/output1.txt
+[2025-12-20 14:28:44.326] [info]   Buffer capacity:  300
+[2025-12-20 14:28:44.326] [info]   Low watermark:    60
+[2025-12-20 14:28:44.326] [info]   Window size:      600s (10min)
+[2025-12-20 14:28:44.326] [info]   Stat threads:     1
+[2025-12-20 14:28:44.326] [info] Creating InputThread...
+[2025-12-20 14:28:44.326] [info] === InputThread Initializing ===
+[2025-12-20 14:28:44.326] [info] Input file: ../data/../data/input1.txt
+[2025-12-20 14:28:44.326] [info] Batch size: 100
+[2025-12-20 14:28:44.326] [info] InputHandler initialized: input_file=../data/../data/input1.txt
+[2025-12-20 14:28:44.326] [info] === TextProcessor Initializing ===
+[2025-12-20 14:28:44.326] [info] Dictionary path: ../dict/
+[2025-12-20 14:28:44.326] [info] POS filter: Enabled
+[2025-12-20 14:28:45.153] [info] Valid POS tags loaded: 15 types
+[2025-12-20 14:28:45.153] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 14:28:45.153] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 14:28:45.163] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 14:28:45.164] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 14:28:45.164] [info] Stop words count: 1280
+[2025-12-20 14:28:45.164] [info] Sensitive words count: 41326
+[2025-12-20 14:28:45.164] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 14:28:45.164] [info] InputThread created successfully
+[2025-12-20 14:28:45.164] [info] Creating 1 StatisticsThreads...
+[2025-12-20 14:28:45.164] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 14:28:45.164] [info] 1 StatisticsThreads created successfully
+[2025-12-20 14:28:45.164] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 14:28:45.164] [info] =================================================
+[2025-12-20 14:28:45.164] [info] HotWordSystem created successfully
+[2025-12-20 14:28:45.164] [info] =================================================
+[2025-12-20 14:28:45.164] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 14:28:45.164] [info] =================================================
+[2025-12-20 14:28:45.164] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 14:28:45.164] [info] System is now running...
+[2025-12-20 14:28:45.164] [info] =================================================
+[2025-12-20 14:28:45.164] [info] =================================================
+[2025-12-20 14:28:45.164] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 14:28:45.164] [info] =================================================
+[2025-12-20 14:28:45.164] [info] Waiting for InputThread to finish...
+[2025-12-20 14:28:45.164] [info] >>> InputThread Started <<<
+[2025-12-20 14:28:45.164] [info] Input file opened successfully: ../data/../data/input1.txt
+[2025-12-20 14:28:45.164] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 14:28:45.233] [info] Query command received: timestamp=267, K=6
+[2025-12-20 14:28:45.242] [info] Output file opened successfully: ../data/../data/output1.txt
+[2025-12-20 14:28:45.276] [info] Query command received: timestamp=496, K=4
+[2025-12-20 14:28:45.346] [info] Query command received: timestamp=758, K=7
+[2025-12-20 14:28:45.355] [info] Query command received: timestamp=807, K=3
+[2025-12-20 14:28:45.484] [info] Query command received: timestamp=1350, K=2
+[2025-12-20 14:28:45.539] [info] Query command received: timestamp=1540, K=3
+[2025-12-20 14:28:45.635] [info] Query command received: timestamp=1712, K=5
+[2025-12-20 14:28:45.760] [info] Query command received: timestamp=2286, K=6
+[2025-12-20 14:28:45.837] [info] Query command received: timestamp=2509, K=10
+[2025-12-20 14:28:45.946] [info] Query command received: timestamp=2849, K=6
+[2025-12-20 14:28:45.996] [info] Query command received: timestamp=2971, K=2
+[2025-12-20 14:28:46.037] [info] Query command received: timestamp=3102, K=2
+[2025-12-20 14:28:46.199] [info] Query command received: timestamp=3638, K=5
+[2025-12-20 14:28:46.343] [info] Query command received: timestamp=4309, K=3
+[2025-12-20 14:28:46.444] [info] Query command received: timestamp=4610, K=1
+[2025-12-20 14:28:46.480] [info] Query command received: timestamp=4811, K=4
+[2025-12-20 14:28:46.480] [info] InputThread: Submitting remaining 77 items in batch
+[2025-12-20 14:28:46.480] [info] Input file closed
+[2025-12-20 14:28:46.480] [info] =================================================
+[2025-12-20 14:28:46.480] [info] ===       InputThread Statistics              ===
+[2025-12-20 14:28:46.480] [info] =================================================
+[2025-12-20 14:28:46.480] [info] Total lines:        12870
+[2025-12-20 14:28:46.480] [info] Text lines:         12854
+[2025-12-20 14:28:46.480] [info] Query lines:        16
+[2025-12-20 14:28:46.480] [info] Total words:        41410
+[2025-12-20 14:28:46.480] [info] Avg words/text:     3.22
+[2025-12-20 14:28:46.480] [info] Total duration:     1.32s
+[2025-12-20 14:28:46.480] [info] Overall throughput: 9778.25 lines/sec
+[2025-12-20 14:28:46.480] [info] =================================================
+[2025-12-20 14:28:46.480] [info] <<< InputThread Terminated <<<
+[2025-12-20 14:28:46.480] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 14:28:46.480] [info] =================================================
+[2025-12-20 14:28:46.480] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 14:28:46.480] [info] =================================================
+[2025-12-20 14:28:46.480] [info] Processed slots:    6088
+[2025-12-20 14:28:46.480] [info] Processed queries:  0
+[2025-12-20 14:28:46.480] [info] Total duration:     1.32s
+[2025-12-20 14:28:46.480] [info] Overall throughput: 4626.30 slots/sec
+[2025-12-20 14:28:46.480] [info] =================================================
+[2025-12-20 14:28:46.480] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 14:28:46.481] [info] InputThread terminated
+[2025-12-20 14:28:46.481] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 14:28:46.481] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 14:28:46.481] [info] =================================================
+[2025-12-20 14:28:46.481] [info] =================================================
+[2025-12-20 14:28:46.481] [info] Processing completed successfully
+[2025-12-20 14:28:46.481] [info] Total duration: 2154 ms
+[2025-12-20 14:28:46.481] [info] Output file: ../data/../data/output1.txt
+[2025-12-20 14:28:46.481] [info] =================================================
+[2025-12-20 14:28:46.481] [info] Shutting down logger system...
+[2025-12-20 14:28:46.632] [info] Output file closed
+[2025-12-20 14:28:46.646] [info] =================================================
+[2025-12-20 14:28:46.646] [info] Hot Word Statistics System Starting
+[2025-12-20 14:28:46.646] [info] Input file: ../data/../data/input2.txt
+[2025-12-20 14:28:46.646] [info] Output file: ../data/../data/output2.txt
+[2025-12-20 14:28:46.646] [info] Creating HotWordSystem instance...
+[2025-12-20 14:28:46.646] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 14:28:46.646] [info] === SlidingWindow Initialized ===
+[2025-12-20 14:28:46.646] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 14:28:46.646] [info] QueryHandler initialized: output_file=../data/../data/output2.txt
+[2025-12-20 14:28:46.646] [info] =================================================
+[2025-12-20 14:28:46.646] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 14:28:46.646] [info] =================================================
+[2025-12-20 14:28:46.646] [info] Configuration:
+[2025-12-20 14:28:46.646] [info]   Input file:       ../data/../data/input2.txt
+[2025-12-20 14:28:46.646] [info]   Output file:      ../data/../data/output2.txt
+[2025-12-20 14:28:46.646] [info]   Buffer capacity:  300
+[2025-12-20 14:28:46.646] [info]   Low watermark:    60
+[2025-12-20 14:28:46.646] [info]   Window size:      600s (10min)
+[2025-12-20 14:28:46.646] [info]   Stat threads:     1
+[2025-12-20 14:28:46.646] [info] Creating InputThread...
+[2025-12-20 14:28:46.646] [info] === InputThread Initializing ===
+[2025-12-20 14:28:46.646] [info] Input file: ../data/../data/input2.txt
+[2025-12-20 14:28:46.646] [info] Batch size: 100
+[2025-12-20 14:28:46.646] [info] InputHandler initialized: input_file=../data/../data/input2.txt
+[2025-12-20 14:28:46.646] [info] === TextProcessor Initializing ===
+[2025-12-20 14:28:46.646] [info] Dictionary path: ../dict/
+[2025-12-20 14:28:46.646] [info] POS filter: Enabled
+[2025-12-20 14:28:47.329] [info] Valid POS tags loaded: 15 types
+[2025-12-20 14:28:47.329] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 14:28:47.329] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 14:28:47.342] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 14:28:47.342] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 14:28:47.342] [info] Stop words count: 1280
+[2025-12-20 14:28:47.342] [info] Sensitive words count: 41326
+[2025-12-20 14:28:47.342] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 14:28:47.342] [info] InputThread created successfully
+[2025-12-20 14:28:47.342] [info] Creating 1 StatisticsThreads...
+[2025-12-20 14:28:47.342] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 14:28:47.342] [info] 1 StatisticsThreads created successfully
+[2025-12-20 14:28:47.342] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 14:28:47.342] [info] =================================================
+[2025-12-20 14:28:47.342] [info] HotWordSystem created successfully
+[2025-12-20 14:28:47.342] [info] =================================================
+[2025-12-20 14:28:47.342] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 14:28:47.342] [info] =================================================
+[2025-12-20 14:28:47.342] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 14:28:47.342] [info] System is now running...
+[2025-12-20 14:28:47.342] [info] =================================================
+[2025-12-20 14:28:47.342] [info] =================================================
+[2025-12-20 14:28:47.342] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 14:28:47.342] [info] =================================================
+[2025-12-20 14:28:47.342] [info] Waiting for InputThread to finish...
+[2025-12-20 14:28:47.342] [info] >>> InputThread Started <<<
+[2025-12-20 14:28:47.342] [info] Input file opened successfully: ../data/../data/input2.txt
+[2025-12-20 14:28:47.344] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 14:28:47.369] [info] Query command received: timestamp=37, K=2
+[2025-12-20 14:28:47.372] [info] Output file opened successfully: ../data/../data/output2.txt
+[2025-12-20 14:28:47.556] [info] Query command received: timestamp=679, K=5
+[2025-12-20 14:28:47.617] [info] Query command received: timestamp=918, K=6
+[2025-12-20 14:28:47.727] [info] Query command received: timestamp=1409, K=3
+[2025-12-20 14:28:47.803] [info] Query command received: timestamp=1856, K=3
+[2025-12-20 14:28:47.945] [info] Query command received: timestamp=2564, K=1
+[2025-12-20 14:28:48.080] [info] Query command received: timestamp=3061, K=7
+[2025-12-20 14:28:48.198] [info] Query command received: timestamp=3683, K=4
+[2025-12-20 14:28:48.301] [info] Query command received: timestamp=4127, K=4
+[2025-12-20 14:28:48.307] [info] Query command received: timestamp=4168, K=4
+[2025-12-20 14:28:48.317] [info] Query command received: timestamp=4240, K=4
+[2025-12-20 14:28:48.397] [info] Query command received: timestamp=4622, K=5
+[2025-12-20 14:28:48.444] [info] Query command received: timestamp=4802, K=3
+[2025-12-20 14:28:48.444] [info] InputThread: Submitting remaining 67 items in batch
+[2025-12-20 14:28:48.444] [info] Input file closed
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] ===       InputThread Statistics              ===
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] Total lines:        11698
+[2025-12-20 14:28:48.444] [info] Text lines:         11685
+[2025-12-20 14:28:48.444] [info] Query lines:        13
+[2025-12-20 14:28:48.444] [info] Total words:        38947
+[2025-12-20 14:28:48.444] [info] Avg words/text:     3.33
+[2025-12-20 14:28:48.444] [info] Total duration:     1.10s
+[2025-12-20 14:28:48.444] [info] Overall throughput: 10618.70 lines/sec
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] <<< InputThread Terminated <<<
+[2025-12-20 14:28:48.444] [info] InputThread terminated
+[2025-12-20 14:28:48.444] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 14:28:48.444] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] Processed slots:    5633
+[2025-12-20 14:28:48.444] [info] Processed queries:  0
+[2025-12-20 14:28:48.444] [info] Total duration:     1.10s
+[2025-12-20 14:28:48.444] [info] Overall throughput: 5121.65 slots/sec
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 14:28:48.444] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] Processing completed successfully
+[2025-12-20 14:28:48.444] [info] Total duration: 1797 ms
+[2025-12-20 14:28:48.444] [info] Output file: ../data/../data/output2.txt
+[2025-12-20 14:28:48.444] [info] =================================================
+[2025-12-20 14:28:48.444] [info] Shutting down logger system...
+[2025-12-20 14:28:48.583] [info] Output file closed
+[2025-12-20 14:28:48.598] [info] =================================================
+[2025-12-20 14:28:48.598] [info] Hot Word Statistics System Starting
+[2025-12-20 14:28:48.598] [info] Input file: ../data/../data/input3.txt
+[2025-12-20 14:28:48.598] [info] Output file: ../data/../data/output3.txt
+[2025-12-20 14:28:48.598] [info] Creating HotWordSystem instance...
+[2025-12-20 14:28:48.598] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 14:28:48.598] [info] === SlidingWindow Initialized ===
+[2025-12-20 14:28:48.598] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 14:28:48.598] [info] QueryHandler initialized: output_file=../data/../data/output3.txt
+[2025-12-20 14:28:48.598] [info] =================================================
+[2025-12-20 14:28:48.598] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 14:28:48.598] [info] =================================================
+[2025-12-20 14:28:48.598] [info] Configuration:
+[2025-12-20 14:28:48.598] [info]   Input file:       ../data/../data/input3.txt
+[2025-12-20 14:28:48.598] [info]   Output file:      ../data/../data/output3.txt
+[2025-12-20 14:28:48.598] [info]   Buffer capacity:  300
+[2025-12-20 14:28:48.598] [info]   Low watermark:    60
+[2025-12-20 14:28:48.598] [info]   Window size:      600s (10min)
+[2025-12-20 14:28:48.598] [info]   Stat threads:     1
+[2025-12-20 14:28:48.598] [info] Creating InputThread...
+[2025-12-20 14:28:48.598] [info] === InputThread Initializing ===
+[2025-12-20 14:28:48.598] [info] Input file: ../data/../data/input3.txt
+[2025-12-20 14:28:48.598] [info] Batch size: 100
+[2025-12-20 14:28:48.598] [info] InputHandler initialized: input_file=../data/../data/input3.txt
+[2025-12-20 14:28:48.598] [info] === TextProcessor Initializing ===
+[2025-12-20 14:28:48.598] [info] Dictionary path: ../dict/
+[2025-12-20 14:28:48.598] [info] POS filter: Enabled
+[2025-12-20 14:28:49.279] [info] Valid POS tags loaded: 15 types
+[2025-12-20 14:28:49.279] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 14:28:49.279] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 14:28:49.290] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 14:28:49.290] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 14:28:49.290] [info] Stop words count: 1280
+[2025-12-20 14:28:49.290] [info] Sensitive words count: 41326
+[2025-12-20 14:28:49.290] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 14:28:49.290] [info] InputThread created successfully
+[2025-12-20 14:28:49.290] [info] Creating 1 StatisticsThreads...
+[2025-12-20 14:28:49.290] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 14:28:49.290] [info] 1 StatisticsThreads created successfully
+[2025-12-20 14:28:49.290] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 14:28:49.290] [info] =================================================
+[2025-12-20 14:28:49.290] [info] HotWordSystem created successfully
+[2025-12-20 14:28:49.290] [info] =================================================
+[2025-12-20 14:28:49.290] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 14:28:49.290] [info] =================================================
+[2025-12-20 14:28:49.290] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 14:28:49.290] [info] System is now running...
+[2025-12-20 14:28:49.290] [info] =================================================
+[2025-12-20 14:28:49.290] [info] =================================================
+[2025-12-20 14:28:49.290] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 14:28:49.290] [info] =================================================
+[2025-12-20 14:28:49.290] [info] Waiting for InputThread to finish...
+[2025-12-20 14:28:49.290] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 14:28:49.290] [info] >>> InputThread Started <<<
+[2025-12-20 14:28:49.290] [info] Input file opened successfully: ../data/../data/input3.txt
+[2025-12-20 14:28:49.298] [info] Query command received: timestamp=10, K=3
+[2025-12-20 14:28:49.302] [info] Output file opened successfully: ../data/../data/output3.txt
+[2025-12-20 14:28:49.323] [info] Query command received: timestamp=133, K=3
+[2025-12-20 14:28:49.373] [info] Query command received: timestamp=404, K=2
+[2025-12-20 14:28:49.467] [info] Query command received: timestamp=1020, K=5
+[2025-12-20 14:28:49.534] [info] Query command received: timestamp=1378, K=5
+[2025-12-20 14:28:49.618] [info] Query command received: timestamp=1730, K=10
+[2025-12-20 14:28:49.725] [info] Query command received: timestamp=2208, K=4
+[2025-12-20 14:28:49.829] [info] Query command received: timestamp=2479, K=5
+[2025-12-20 14:28:49.939] [info] Query command received: timestamp=2721, K=4
+[2025-12-20 14:28:50.033] [info] Query command received: timestamp=3067, K=3
+[2025-12-20 14:28:50.132] [info] Query command received: timestamp=3507, K=4
+[2025-12-20 14:28:50.234] [info] Query command received: timestamp=3981, K=5
+[2025-12-20 14:28:50.342] [info] Query command received: timestamp=4387, K=3
+[2025-12-20 14:28:50.452] [info] Query command received: timestamp=4841, K=6
+[2025-12-20 14:28:50.538] [info] Query command received: timestamp=5123, K=4
+[2025-12-20 14:28:50.584] [info] Query command received: timestamp=5325, K=3
+[2025-12-20 14:28:50.584] [info] InputThread: Submitting remaining 47 items in batch
+[2025-12-20 14:28:50.584] [info] Input file closed
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] ===       InputThread Statistics              ===
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] Total lines:        14930
+[2025-12-20 14:28:50.584] [info] Text lines:         14914
+[2025-12-20 14:28:50.584] [info] Query lines:        16
+[2025-12-20 14:28:50.584] [info] Total words:        53842
+[2025-12-20 14:28:50.584] [info] Avg words/text:     3.61
+[2025-12-20 14:28:50.584] [info] Total duration:     1.29s
+[2025-12-20 14:28:50.584] [info] Overall throughput: 11536.67 lines/sec
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] <<< InputThread Terminated <<<
+[2025-12-20 14:28:50.584] [info] InputThread terminated
+[2025-12-20 14:28:50.584] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 14:28:50.584] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] Processed slots:    7223
+[2025-12-20 14:28:50.584] [info] Processed queries:  0
+[2025-12-20 14:28:50.584] [info] Total duration:     1.29s
+[2025-12-20 14:28:50.584] [info] Overall throughput: 5579.63 slots/sec
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 14:28:50.584] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] Processing completed successfully
+[2025-12-20 14:28:50.584] [info] Total duration: 1986 ms
+[2025-12-20 14:28:50.584] [info] Output file: ../data/../data/output3.txt
+[2025-12-20 14:28:50.584] [info] =================================================
+[2025-12-20 14:28:50.584] [info] Shutting down logger system...
+[2025-12-20 14:28:50.717] [info] Output file closed
+[2025-12-20 14:29:41.236] [info] =================================================
+[2025-12-20 14:29:41.236] [info] Hot Word Statistics System Starting
+[2025-12-20 14:29:41.236] [info] Input file: ../data/input2.txt
+[2025-12-20 14:29:41.236] [info] Output file: ../data/output2.txt
+[2025-12-20 14:29:41.236] [info] Creating HotWordSystem instance...
+[2025-12-20 14:29:41.236] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 14:29:41.236] [info] === SlidingWindow Initialized ===
+[2025-12-20 14:29:41.236] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 14:29:41.236] [info] QueryHandler initialized: output_file=../data/output2.txt
+[2025-12-20 14:29:41.236] [info] =================================================
+[2025-12-20 14:29:41.236] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 14:29:41.236] [info] =================================================
+[2025-12-20 14:29:41.236] [info] Configuration:
+[2025-12-20 14:29:41.236] [info]   Input file:       ../data/input2.txt
+[2025-12-20 14:29:41.236] [info]   Output file:      ../data/output2.txt
+[2025-12-20 14:29:41.236] [info]   Buffer capacity:  300
+[2025-12-20 14:29:41.236] [info]   Low watermark:    60
+[2025-12-20 14:29:41.236] [info]   Window size:      600s (10min)
+[2025-12-20 14:29:41.236] [info]   Stat threads:     1
+[2025-12-20 14:29:41.236] [info] Creating InputThread...
+[2025-12-20 14:29:41.236] [info] === InputThread Initializing ===
+[2025-12-20 14:29:41.236] [info] Input file: ../data/input2.txt
+[2025-12-20 14:29:41.236] [info] Batch size: 100
+[2025-12-20 14:29:41.236] [info] InputHandler initialized: input_file=../data/input2.txt
+[2025-12-20 14:29:41.236] [info] === TextProcessor Initializing ===
+[2025-12-20 14:29:41.236] [info] Dictionary path: ../dict/
+[2025-12-20 14:29:41.236] [info] POS filter: Enabled
+[2025-12-20 14:29:41.961] [info] Valid POS tags loaded: 15 types
+[2025-12-20 14:29:41.961] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 14:29:41.961] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 14:29:41.970] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 14:29:41.970] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 14:29:41.970] [info] Stop words count: 1280
+[2025-12-20 14:29:41.970] [info] Sensitive words count: 41326
+[2025-12-20 14:29:41.970] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 14:29:41.970] [info] InputThread created successfully
+[2025-12-20 14:29:41.970] [info] Creating 1 StatisticsThreads...
+[2025-12-20 14:29:41.970] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 14:29:41.970] [info] 1 StatisticsThreads created successfully
+[2025-12-20 14:29:41.970] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 14:29:41.970] [info] =================================================
+[2025-12-20 14:29:41.970] [info] HotWordSystem created successfully
+[2025-12-20 14:29:41.970] [info] =================================================
+[2025-12-20 14:29:41.970] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 14:29:41.970] [info] =================================================
+[2025-12-20 14:29:41.970] [info] >>> InputThread Started <<<
+[2025-12-20 14:29:41.970] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 14:29:41.970] [info] System is now running...
+[2025-12-20 14:29:41.970] [info] =================================================
+[2025-12-20 14:29:41.970] [info] =================================================
+[2025-12-20 14:29:41.970] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 14:29:41.970] [info] =================================================
+[2025-12-20 14:29:41.970] [info] Waiting for InputThread to finish...
+[2025-12-20 14:29:41.970] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 14:29:41.970] [info] Input file opened successfully: ../data/input2.txt
+[2025-12-20 14:29:41.991] [info] Query command received: timestamp=37, K=2
+[2025-12-20 14:29:41.995] [info] Output file opened successfully: ../data/output2.txt
+[2025-12-20 14:29:42.141] [info] Query command received: timestamp=679, K=5
+[2025-12-20 14:29:42.203] [info] Query command received: timestamp=918, K=6
+[2025-12-20 14:29:42.306] [info] Query command received: timestamp=1409, K=3
+[2025-12-20 14:29:42.387] [info] Query command received: timestamp=1856, K=3
+[2025-12-20 14:29:42.531] [info] Query command received: timestamp=2564, K=1
+[2025-12-20 14:29:42.669] [info] Query command received: timestamp=3061, K=7
+[2025-12-20 14:29:42.788] [info] Query command received: timestamp=3683, K=4
+[2025-12-20 14:29:42.886] [info] Query command received: timestamp=4127, K=4
+[2025-12-20 14:29:42.892] [info] Query command received: timestamp=4168, K=4
+[2025-12-20 14:29:42.903] [info] Query command received: timestamp=4240, K=4
+[2025-12-20 14:29:42.975] [info] Query command received: timestamp=4622, K=5
+[2025-12-20 14:29:43.024] [info] Query command received: timestamp=4802, K=3
+[2025-12-20 14:29:43.024] [info] InputThread: Submitting remaining 67 items in batch
+[2025-12-20 14:29:43.024] [info] Input file closed
+[2025-12-20 14:29:43.024] [info] =================================================
+[2025-12-20 14:29:43.024] [info] ===       InputThread Statistics              ===
+[2025-12-20 14:29:43.024] [info] =================================================
+[2025-12-20 14:29:43.024] [info] Total lines:        11698
+[2025-12-20 14:29:43.024] [info] Text lines:         11685
+[2025-12-20 14:29:43.024] [info] Query lines:        13
+[2025-12-20 14:29:43.024] [info] Total words:        38947
+[2025-12-20 14:29:43.024] [info] Avg words/text:     3.33
+[2025-12-20 14:29:43.024] [info] Total duration:     1.05s
+[2025-12-20 14:29:43.024] [info] Overall throughput: 11099.52 lines/sec
+[2025-12-20 14:29:43.024] [info] =================================================
+[2025-12-20 14:29:43.024] [info] <<< InputThread Terminated <<<
+[2025-12-20 14:29:43.024] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 14:29:43.024] [info] =================================================
+[2025-12-20 14:29:43.024] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 14:29:43.024] [info] =================================================
+[2025-12-20 14:29:43.024] [info] Processed slots:    5633
+[2025-12-20 14:29:43.024] [info] Processed queries:  0
+[2025-12-20 14:29:43.024] [info] Total duration:     1.05s
+[2025-12-20 14:29:43.024] [info] Overall throughput: 5344.39 slots/sec
+[2025-12-20 14:29:43.024] [info] =================================================
+[2025-12-20 14:29:43.024] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 14:29:43.025] [info] InputThread terminated
+[2025-12-20 14:29:43.025] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 14:29:43.025] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 14:29:43.025] [info] =================================================
+[2025-12-20 14:29:43.025] [info] =================================================
+[2025-12-20 14:29:43.025] [info] Processing completed successfully
+[2025-12-20 14:29:43.025] [info] Total duration: 1788 ms
+[2025-12-20 14:29:43.025] [info] Output file: ../data/output2.txt
+[2025-12-20 14:29:43.025] [info] =================================================
+[2025-12-20 14:29:43.025] [info] Shutting down logger system...
+[2025-12-20 14:29:43.148] [info] Output file closed
+[2025-12-20 14:30:23.760] [info] =================================================
+[2025-12-20 14:30:23.760] [info] Hot Word Statistics System Starting
+[2025-12-20 14:30:23.760] [info] Input file: ../data/input2.txt
+[2025-12-20 14:30:23.760] [info] Output file: ../data/output2.txt
+[2025-12-20 14:30:23.760] [info] Creating HotWordSystem instance...
+[2025-12-20 14:30:23.760] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 14:30:23.760] [info] === SlidingWindow Initialized ===
+[2025-12-20 14:30:23.760] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 14:30:23.760] [info] QueryHandler initialized: output_file=../data/output2.txt
+[2025-12-20 14:30:23.760] [info] =================================================
+[2025-12-20 14:30:23.760] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 14:30:23.760] [info] =================================================
+[2025-12-20 14:30:23.760] [info] Configuration:
+[2025-12-20 14:30:23.760] [info]   Input file:       ../data/input2.txt
+[2025-12-20 14:30:23.760] [info]   Output file:      ../data/output2.txt
+[2025-12-20 14:30:23.760] [info]   Buffer capacity:  300
+[2025-12-20 14:30:23.760] [info]   Low watermark:    60
+[2025-12-20 14:30:23.760] [info]   Window size:      600s (10min)
+[2025-12-20 14:30:23.760] [info]   Stat threads:     1
+[2025-12-20 14:30:23.760] [info] Creating InputThread...
+[2025-12-20 14:30:23.760] [info] === InputThread Initializing ===
+[2025-12-20 14:30:23.760] [info] Input file: ../data/input2.txt
+[2025-12-20 14:30:23.760] [info] Batch size: 100
+[2025-12-20 14:30:23.760] [info] InputHandler initialized: input_file=../data/input2.txt
+[2025-12-20 14:30:23.760] [info] === TextProcessor Initializing ===
+[2025-12-20 14:30:23.760] [info] Dictionary path: ../dict/
+[2025-12-20 14:30:23.760] [info] POS filter: Enabled
+[2025-12-20 14:30:24.466] [info] Valid POS tags loaded: 15 types
+[2025-12-20 14:30:24.466] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 14:30:24.466] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 14:30:24.476] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 14:30:24.476] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 14:30:24.476] [info] Stop words count: 1280
+[2025-12-20 14:30:24.476] [info] Sensitive words count: 41326
+[2025-12-20 14:30:24.476] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 14:30:24.476] [info] InputThread created successfully
+[2025-12-20 14:30:24.476] [info] Creating 1 StatisticsThreads...
+[2025-12-20 14:30:24.476] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 14:30:24.476] [info] 1 StatisticsThreads created successfully
+[2025-12-20 14:30:24.476] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 14:30:24.476] [info] =================================================
+[2025-12-20 14:30:24.476] [info] HotWordSystem created successfully
+[2025-12-20 14:30:24.476] [info] =================================================
+[2025-12-20 14:30:24.476] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 14:30:24.476] [info] =================================================
+[2025-12-20 14:30:24.476] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 14:30:24.476] [info] System is now running...
+[2025-12-20 14:30:24.476] [info] =================================================
+[2025-12-20 14:30:24.476] [info] =================================================
+[2025-12-20 14:30:24.476] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 14:30:24.476] [info] =================================================
+[2025-12-20 14:30:24.476] [info] Waiting for InputThread to finish...
+[2025-12-20 14:30:24.476] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 14:30:24.476] [info] >>> InputThread Started <<<
+[2025-12-20 14:30:24.476] [info] Input file opened successfully: ../data/input2.txt
+[2025-12-20 14:30:24.493] [info] Query command received: timestamp=37, K=2
+[2025-12-20 14:30:24.496] [info] Output file opened successfully: ../data/output2.txt
+[2025-12-20 14:30:24.660] [info] Query command received: timestamp=679, K=5
+[2025-12-20 14:30:24.719] [info] Query command received: timestamp=918, K=6
+[2025-12-20 14:30:24.828] [info] Query command received: timestamp=1409, K=3
+[2025-12-20 14:30:24.898] [info] Query command received: timestamp=1856, K=3
+[2025-12-20 14:30:25.019] [info] Query command received: timestamp=2564, K=1
+[2025-12-20 14:30:25.127] [info] Query command received: timestamp=3061, K=7
+[2025-12-20 14:30:25.236] [info] Query command received: timestamp=3683, K=4
+[2025-12-20 14:30:25.331] [info] Query command received: timestamp=4127, K=4
+[2025-12-20 14:30:25.336] [info] Query command received: timestamp=4168, K=4
+[2025-12-20 14:30:25.347] [info] Query command received: timestamp=4240, K=4
+[2025-12-20 14:30:25.420] [info] Query command received: timestamp=4622, K=5
+[2025-12-20 14:30:25.464] [info] Query command received: timestamp=4802, K=3
+[2025-12-20 14:30:25.464] [info] InputThread: Submitting remaining 67 items in batch
+[2025-12-20 14:30:25.464] [info] Input file closed
+[2025-12-20 14:30:25.464] [info] =================================================
+[2025-12-20 14:30:25.464] [info] ===       InputThread Statistics              ===
+[2025-12-20 14:30:25.464] [info] =================================================
+[2025-12-20 14:30:25.464] [info] Total lines:        11698
+[2025-12-20 14:30:25.464] [info] Text lines:         11685
+[2025-12-20 14:30:25.464] [info] Query lines:        13
+[2025-12-20 14:30:25.464] [info] Total words:        38947
+[2025-12-20 14:30:25.464] [info] Avg words/text:     3.33
+[2025-12-20 14:30:25.464] [info] Total duration:     0.99s
+[2025-12-20 14:30:25.464] [info] Overall throughput: 11837.52 lines/sec
+[2025-12-20 14:30:25.464] [info] =================================================
+[2025-12-20 14:30:25.464] [info] <<< InputThread Terminated <<<
+[2025-12-20 14:30:25.465] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 14:30:25.465] [info] =================================================
+[2025-12-20 14:30:25.465] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 14:30:25.465] [info] =================================================
+[2025-12-20 14:30:25.465] [info] Processed slots:    5633
+[2025-12-20 14:30:25.465] [info] Processed queries:  0
+[2025-12-20 14:30:25.465] [info] Total duration:     0.99s
+[2025-12-20 14:30:25.465] [info] Overall throughput: 5698.71 slots/sec
+[2025-12-20 14:30:25.465] [info] =================================================
+[2025-12-20 14:30:25.465] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 14:30:25.465] [info] InputThread terminated
+[2025-12-20 14:30:25.465] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 14:30:25.465] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 14:30:25.465] [info] =================================================
+[2025-12-20 14:30:25.465] [info] =================================================
+[2025-12-20 14:30:25.465] [info] Processing completed successfully
+[2025-12-20 14:30:25.465] [info] Total duration: 1704 ms
+[2025-12-20 14:30:25.465] [info] Output file: ../data/output2.txt
+[2025-12-20 14:30:25.465] [info] =================================================
+[2025-12-20 14:30:25.465] [info] Shutting down logger system...
+[2025-12-20 14:30:25.579] [info] Output file closed
+[2025-12-20 15:35:55.797] [info] =================================================
+[2025-12-20 15:35:55.797] [info] Hot Word Statistics System Starting
+[2025-12-20 15:35:55.797] [info] Input file: ../data/input2.txt
+[2025-12-20 15:35:55.797] [info] Output file: ../data/output2.txt
+[2025-12-20 15:35:55.797] [info] Creating HotWordSystem instance...
+[2025-12-20 15:35:55.797] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 15:35:55.797] [info] === SlidingWindow Initialized ===
+[2025-12-20 15:35:55.797] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 15:35:55.797] [info] QueryHandler initialized: output_file=../data/output2.txt
+[2025-12-20 15:35:55.797] [info] =================================================
+[2025-12-20 15:35:55.797] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 15:49:24.522] [info] =================================================
+[2025-12-20 15:49:24.523] [info] Hot Word Statistics System Starting
+[2025-12-20 15:49:24.523] [info] Input file: ../data/input2.txt
+[2025-12-20 15:49:24.523] [info] Output file: ../data/output2.txt
+[2025-12-20 15:49:24.523] [info] Creating HotWordSystem instance...
+[2025-12-20 15:49:24.523] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 15:49:24.523] [info] === SlidingWindow Initialized ===
+[2025-12-20 15:49:24.523] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 15:49:24.523] [info] QueryHandler initialized: output_file=../data/output2.txt
+[2025-12-20 15:49:24.523] [info] =================================================
+[2025-12-20 15:49:24.523] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 15:49:24.523] [info] =================================================
+[2025-12-20 15:49:24.523] [info] Configuration:
+[2025-12-20 15:49:24.523] [info]   Input file:       ../data/input2.txt
+[2025-12-20 15:49:24.523] [info]   Output file:      ../data/output2.txt
+[2025-12-20 15:49:24.523] [info]   Buffer capacity:  300
+[2025-12-20 15:49:24.523] [info]   Low watermark:    60
+[2025-12-20 15:49:24.523] [info]   Window size:      600s (10min)
+[2025-12-20 15:49:24.523] [info]   Stat threads:     1
+[2025-12-20 15:49:24.523] [info] Creating InputThread...
+[2025-12-20 15:49:24.523] [info] === InputThread Initializing ===
+[2025-12-20 15:49:24.523] [info] Input file: ../data/input2.txt
+[2025-12-20 15:49:24.523] [info] Batch size: 100
+[2025-12-20 15:49:24.523] [info] InputHandler initialized: input_file=../data/input2.txt
+[2025-12-20 15:49:24.523] [info] === TextProcessor Initializing ===
+[2025-12-20 15:49:24.523] [info] Dictionary path: ../dict/
+[2025-12-20 15:49:24.523] [info] POS filter: Enabled
+[2025-12-20 15:49:25.261] [info] Valid POS tags loaded: 15 types
+[2025-12-20 15:49:25.261] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 15:49:25.261] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 15:49:25.272] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 15:49:25.272] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 15:49:25.272] [info] Stop words count: 1280
+[2025-12-20 15:49:25.272] [info] Sensitive words count: 41326
+[2025-12-20 15:49:25.272] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 15:49:25.272] [info] InputThread created successfully
+[2025-12-20 15:49:25.272] [info] Creating 1 StatisticsThreads...
+[2025-12-20 15:49:25.272] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 15:49:25.272] [info] 1 StatisticsThreads created successfully
+[2025-12-20 15:49:25.272] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 15:49:25.272] [info] =================================================
+[2025-12-20 15:49:25.272] [info] HotWordSystem created successfully
+[2025-12-20 15:49:25.272] [info] =================================================
+[2025-12-20 15:49:25.272] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 15:49:25.272] [info] =================================================
+[2025-12-20 15:49:25.272] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 15:49:25.272] [info] System is now running...
+[2025-12-20 15:49:25.272] [info] =================================================
+[2025-12-20 15:49:25.272] [info] =================================================
+[2025-12-20 15:49:25.272] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 15:49:25.272] [info] =================================================
+[2025-12-20 15:49:25.272] [info] Waiting for InputThread to finish...
+[2025-12-20 15:49:25.272] [info] >>> InputThread Started <<<
+[2025-12-20 15:49:25.272] [info] Input file opened successfully: ../data/input2.txt
+[2025-12-20 15:49:25.272] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 15:49:25.288] [warning] StatisticsThread [0]: Slow buffer pop: 15.76ms
+[2025-12-20 15:49:25.291] [info] Query command received: timestamp=37, K=2
+[2025-12-20 15:49:25.293] [info] Output file opened successfully: ../data/output2.txt
+[2025-12-20 15:49:25.434] [info] Query command received: timestamp=679, K=5
+[2025-12-20 15:49:25.494] [info] Query command received: timestamp=918, K=6
+[2025-12-20 15:49:25.606] [info] Query command received: timestamp=1409, K=3
+[2025-12-20 15:49:25.679] [warning] StatisticsThread [0]: Slow buffer pop: 16.27ms
+[2025-12-20 15:49:25.694] [warning] StatisticsThread [0]: Slow buffer pop: 14.37ms
+[2025-12-20 15:49:25.703] [info] Query command received: timestamp=1856, K=3
+[2025-12-20 15:49:25.708] [warning] StatisticsThread [0]: Slow buffer pop: 12.83ms
+[2025-12-20 15:49:25.720] [warning] StatisticsThread [0]: Slow buffer pop: 10.89ms
+[2025-12-20 15:49:25.831] [info] Query command received: timestamp=2564, K=1
+[2025-12-20 15:49:25.853] [warning] StatisticsThread [0]: Slow buffer pop: 11.21ms
+[2025-12-20 15:49:25.893] [warning] StatisticsThread [0]: Slow buffer pop: 11.62ms
+[2025-12-20 15:49:25.904] [warning] StatisticsThread [0]: Slow buffer pop: 10.80ms
+[2025-12-20 15:49:25.957] [info] Query command received: timestamp=3061, K=7
+[2025-12-20 15:49:26.061] [info] Query command received: timestamp=3683, K=4
+[2025-12-20 15:49:26.153] [info] Query command received: timestamp=4127, K=4
+[2025-12-20 15:49:26.159] [info] Query command received: timestamp=4168, K=4
+[2025-12-20 15:49:26.171] [info] Query command received: timestamp=4240, K=4
+[2025-12-20 15:49:26.183] [warning] StatisticsThread [0]: Slow buffer pop: 12.03ms
+[2025-12-20 15:49:26.198] [warning] StatisticsThread [0]: Slow buffer pop: 12.57ms
+[2025-12-20 15:49:26.213] [warning] StatisticsThread [0]: Slow buffer pop: 14.59ms
+[2025-12-20 15:49:26.226] [warning] StatisticsThread [0]: Slow buffer pop: 13.01ms
+[2025-12-20 15:49:26.268] [info] Query command received: timestamp=4622, K=5
+[2025-12-20 15:49:26.313] [info] Query command received: timestamp=4802, K=3
+[2025-12-20 15:49:26.313] [info] InputThread: Submitting remaining 67 items in batch
+[2025-12-20 15:49:26.313] [info] Input file closed
+[2025-12-20 15:49:26.313] [info] =================================================
+[2025-12-20 15:49:26.313] [info] ===       InputThread Statistics              ===
+[2025-12-20 15:49:26.313] [info] =================================================
+[2025-12-20 15:49:26.313] [info] Total lines:        11698
+[2025-12-20 15:49:26.313] [info] Text lines:         11685
+[2025-12-20 15:49:26.313] [info] Query lines:        13
+[2025-12-20 15:49:26.313] [info] Total words:        38947
+[2025-12-20 15:49:26.313] [info] Avg words/text:     3.33
+[2025-12-20 15:49:26.313] [info] Total duration:     1.04s
+[2025-12-20 15:49:26.313] [info] Overall throughput: 11232.57 lines/sec
+[2025-12-20 15:49:26.313] [info] =================================================
+[2025-12-20 15:49:26.313] [info] <<< InputThread Terminated <<<
+[2025-12-20 15:49:26.313] [info] InputThread terminated
+[2025-12-20 15:49:26.313] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 15:49:26.314] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 15:49:26.314] [info] =================================================
+[2025-12-20 15:49:26.314] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 15:49:26.314] [info] =================================================
+[2025-12-20 15:49:26.314] [info] Processed slots:    11267
+[2025-12-20 15:49:26.314] [info] Processed queries:  0
+[2025-12-20 15:49:26.314] [info] Total duration:     1.04s
+[2025-12-20 15:49:26.314] [info] Overall throughput: 10819.33 slots/sec
+[2025-12-20 15:49:26.314] [info] =================================================
+[2025-12-20 15:49:26.314] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 15:49:26.314] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 15:49:26.314] [info] =================================================
+[2025-12-20 15:49:26.314] [info] =================================================
+[2025-12-20 15:49:26.314] [info] Processing completed successfully
+[2025-12-20 15:49:26.314] [info] Total duration: 1791 ms
+[2025-12-20 15:49:26.314] [info] Output file: ../data/output2.txt
+[2025-12-20 15:49:26.314] [info] =================================================
+[2025-12-20 15:49:26.314] [info] Shutting down logger system...
+[2025-12-20 15:49:26.423] [info] Output file closed
+[2025-12-20 15:50:22.166] [info] =================================================
+[2025-12-20 15:50:22.166] [info] Hot Word Statistics System Starting
+[2025-12-20 15:50:22.166] [info] Input file: ../data/../data/input1.txt
+[2025-12-20 15:50:22.166] [info] Output file: ../data/../data/output1.txt
+[2025-12-20 15:50:22.166] [info] Creating HotWordSystem instance...
+[2025-12-20 15:50:22.166] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 15:50:22.166] [info] === SlidingWindow Initialized ===
+[2025-12-20 15:50:22.166] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 15:50:22.166] [info] QueryHandler initialized: output_file=../data/../data/output1.txt
+[2025-12-20 15:50:22.166] [info] =================================================
+[2025-12-20 15:50:22.166] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 15:50:22.166] [info] =================================================
+[2025-12-20 15:50:22.166] [info] Configuration:
+[2025-12-20 15:50:22.166] [info]   Input file:       ../data/../data/input1.txt
+[2025-12-20 15:50:22.166] [info]   Output file:      ../data/../data/output1.txt
+[2025-12-20 15:50:22.166] [info]   Buffer capacity:  300
+[2025-12-20 15:50:22.166] [info]   Low watermark:    60
+[2025-12-20 15:50:22.166] [info]   Window size:      600s (10min)
+[2025-12-20 15:50:22.166] [info]   Stat threads:     1
+[2025-12-20 15:50:22.166] [info] Creating InputThread...
+[2025-12-20 15:50:22.166] [info] === InputThread Initializing ===
+[2025-12-20 15:50:22.166] [info] Input file: ../data/../data/input1.txt
+[2025-12-20 15:50:22.166] [info] Batch size: 100
+[2025-12-20 15:50:22.166] [info] InputHandler initialized: input_file=../data/../data/input1.txt
+[2025-12-20 15:50:22.166] [info] === TextProcessor Initializing ===
+[2025-12-20 15:50:22.166] [info] Dictionary path: ../dict/
+[2025-12-20 15:50:22.166] [info] POS filter: Enabled
+[2025-12-20 15:50:22.950] [info] Valid POS tags loaded: 15 types
+[2025-12-20 15:50:22.950] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 15:50:22.951] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 15:50:22.962] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 15:50:22.962] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 15:50:22.962] [info] Stop words count: 1280
+[2025-12-20 15:50:22.962] [info] Sensitive words count: 41326
+[2025-12-20 15:50:22.962] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 15:50:22.962] [info] InputThread created successfully
+[2025-12-20 15:50:22.962] [info] Creating 1 StatisticsThreads...
+[2025-12-20 15:50:22.962] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 15:50:22.962] [info] 1 StatisticsThreads created successfully
+[2025-12-20 15:50:22.962] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 15:50:22.962] [info] =================================================
+[2025-12-20 15:50:22.962] [info] HotWordSystem created successfully
+[2025-12-20 15:50:22.962] [info] =================================================
+[2025-12-20 15:50:22.962] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 15:50:22.962] [info] =================================================
+[2025-12-20 15:50:22.962] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 15:50:22.962] [info] System is now running...
+[2025-12-20 15:50:22.962] [info] =================================================
+[2025-12-20 15:50:22.962] [info] =================================================
+[2025-12-20 15:50:22.962] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 15:50:22.962] [info] =================================================
+[2025-12-20 15:50:22.962] [info] Waiting for InputThread to finish...
+[2025-12-20 15:50:22.962] [info] >>> InputThread Started <<<
+[2025-12-20 15:50:22.962] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 15:50:22.962] [info] Input file opened successfully: ../data/../data/input1.txt
+[2025-12-20 15:50:22.972] [warning] StatisticsThread [0]: Slow buffer pop: 10.38ms
+[2025-12-20 15:50:23.016] [info] Query command received: timestamp=267, K=6
+[2025-12-20 15:50:23.024] [info] Output file opened successfully: ../data/../data/output1.txt
+[2025-12-20 15:50:23.055] [info] Query command received: timestamp=496, K=4
+[2025-12-20 15:50:23.084] [warning] StatisticsThread [0]: Slow buffer pop: 10.23ms
+[2025-12-20 15:50:23.095] [info] Query command received: timestamp=758, K=7
+[2025-12-20 15:50:23.103] [info] Query command received: timestamp=807, K=3
+[2025-12-20 15:50:23.208] [info] Query command received: timestamp=1350, K=2
+[2025-12-20 15:50:23.250] [info] Query command received: timestamp=1540, K=3
+[2025-12-20 15:50:23.325] [info] Query command received: timestamp=1712, K=5
+[2025-12-20 15:50:23.431] [info] Query command received: timestamp=2286, K=6
+[2025-12-20 15:50:23.508] [info] Query command received: timestamp=2509, K=10
+[2025-12-20 15:50:23.577] [warning] StatisticsThread [0]: Slow buffer pop: 18.52ms
+[2025-12-20 15:50:23.600] [info] Query command received: timestamp=2849, K=6
+[2025-12-20 15:50:23.609] [warning] StatisticsThread [0]: Slow buffer pop: 10.80ms
+[2025-12-20 15:50:23.640] [info] Query command received: timestamp=2971, K=2
+[2025-12-20 15:50:23.642] [warning] StatisticsThread [0]: Slow buffer pop: 14.72ms
+[2025-12-20 15:50:23.675] [info] Query command received: timestamp=3102, K=2
+[2025-12-20 15:50:23.815] [info] Query command received: timestamp=3638, K=5
+[2025-12-20 15:50:23.928] [info] Query command received: timestamp=4309, K=3
+[2025-12-20 15:50:24.003] [info] Query command received: timestamp=4610, K=1
+[2025-12-20 15:50:24.038] [info] Query command received: timestamp=4811, K=4
+[2025-12-20 15:50:24.038] [info] InputThread: Submitting remaining 77 items in batch
+[2025-12-20 15:50:24.038] [info] Input file closed
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] ===       InputThread Statistics              ===
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] Total lines:        12870
+[2025-12-20 15:50:24.038] [info] Text lines:         12854
+[2025-12-20 15:50:24.038] [info] Query lines:        16
+[2025-12-20 15:50:24.038] [info] Total words:        41410
+[2025-12-20 15:50:24.038] [info] Avg words/text:     3.22
+[2025-12-20 15:50:24.038] [info] Total duration:     1.08s
+[2025-12-20 15:50:24.038] [info] Overall throughput: 11959.28 lines/sec
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] <<< InputThread Terminated <<<
+[2025-12-20 15:50:24.038] [info] InputThread terminated
+[2025-12-20 15:50:24.038] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 15:50:24.038] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] Processed slots:    12177
+[2025-12-20 15:50:24.038] [info] Processed queries:  0
+[2025-12-20 15:50:24.038] [info] Total duration:     1.08s
+[2025-12-20 15:50:24.038] [info] Overall throughput: 11310.23 slots/sec
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 15:50:24.038] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] Processing completed successfully
+[2025-12-20 15:50:24.038] [info] Total duration: 1872 ms
+[2025-12-20 15:50:24.038] [info] Output file: ../data/../data/output1.txt
+[2025-12-20 15:50:24.038] [info] =================================================
+[2025-12-20 15:50:24.038] [info] Shutting down logger system...
+[2025-12-20 15:50:24.156] [info] Output file closed
+[2025-12-20 15:50:24.168] [info] =================================================
+[2025-12-20 15:50:24.168] [info] Hot Word Statistics System Starting
+[2025-12-20 15:50:24.168] [info] Input file: ../data/../data/input2.txt
+[2025-12-20 15:50:24.168] [info] Output file: ../data/../data/output2.txt
+[2025-12-20 15:50:24.168] [info] Creating HotWordSystem instance...
+[2025-12-20 15:50:24.168] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 15:50:24.168] [info] === SlidingWindow Initialized ===
+[2025-12-20 15:50:24.168] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 15:50:24.168] [info] QueryHandler initialized: output_file=../data/../data/output2.txt
+[2025-12-20 15:50:24.168] [info] =================================================
+[2025-12-20 15:50:24.168] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 15:50:24.168] [info] =================================================
+[2025-12-20 15:50:24.168] [info] Configuration:
+[2025-12-20 15:50:24.168] [info]   Input file:       ../data/../data/input2.txt
+[2025-12-20 15:50:24.168] [info]   Output file:      ../data/../data/output2.txt
+[2025-12-20 15:50:24.168] [info]   Buffer capacity:  300
+[2025-12-20 15:50:24.168] [info]   Low watermark:    60
+[2025-12-20 15:50:24.168] [info]   Window size:      600s (10min)
+[2025-12-20 15:50:24.168] [info]   Stat threads:     1
+[2025-12-20 15:50:24.168] [info] Creating InputThread...
+[2025-12-20 15:50:24.168] [info] === InputThread Initializing ===
+[2025-12-20 15:50:24.168] [info] Input file: ../data/../data/input2.txt
+[2025-12-20 15:50:24.168] [info] Batch size: 100
+[2025-12-20 15:50:24.168] [info] InputHandler initialized: input_file=../data/../data/input2.txt
+[2025-12-20 15:50:24.168] [info] === TextProcessor Initializing ===
+[2025-12-20 15:50:24.168] [info] Dictionary path: ../dict/
+[2025-12-20 15:50:24.168] [info] POS filter: Enabled
+[2025-12-20 15:50:24.880] [info] Valid POS tags loaded: 15 types
+[2025-12-20 15:50:24.880] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 15:50:24.881] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 15:50:24.890] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 15:50:24.890] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 15:50:24.890] [info] Stop words count: 1280
+[2025-12-20 15:50:24.890] [info] Sensitive words count: 41326
+[2025-12-20 15:50:24.890] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 15:50:24.890] [info] InputThread created successfully
+[2025-12-20 15:50:24.890] [info] Creating 1 StatisticsThreads...
+[2025-12-20 15:50:24.890] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 15:50:24.890] [info] 1 StatisticsThreads created successfully
+[2025-12-20 15:50:24.890] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 15:50:24.890] [info] =================================================
+[2025-12-20 15:50:24.890] [info] HotWordSystem created successfully
+[2025-12-20 15:50:24.890] [info] =================================================
+[2025-12-20 15:50:24.890] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 15:50:24.890] [info] =================================================
+[2025-12-20 15:50:24.890] [info] >>> InputThread Started <<<
+[2025-12-20 15:50:24.890] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 15:50:24.890] [info] System is now running...
+[2025-12-20 15:50:24.890] [info] =================================================
+[2025-12-20 15:50:24.890] [info] =================================================
+[2025-12-20 15:50:24.890] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 15:50:24.890] [info] =================================================
+[2025-12-20 15:50:24.890] [info] Waiting for InputThread to finish...
+[2025-12-20 15:50:24.890] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 15:50:24.890] [info] Input file opened successfully: ../data/../data/input2.txt
+[2025-12-20 15:50:24.904] [warning] StatisticsThread [0]: Slow buffer pop: 14.01ms
+[2025-12-20 15:50:24.912] [info] Query command received: timestamp=37, K=2
+[2025-12-20 15:50:24.915] [info] Output file opened successfully: ../data/../data/output2.txt
+[2025-12-20 15:50:25.054] [info] Query command received: timestamp=679, K=5
+[2025-12-20 15:50:25.115] [info] Query command received: timestamp=918, K=6
+[2025-12-20 15:50:25.223] [info] Query command received: timestamp=1409, K=3
+[2025-12-20 15:50:25.297] [info] Query command received: timestamp=1856, K=3
+[2025-12-20 15:50:25.417] [info] Query command received: timestamp=2564, K=1
+[2025-12-20 15:50:25.470] [warning] StatisticsThread [0]: Slow buffer pop: 10.19ms
+[2025-12-20 15:50:25.527] [info] Query command received: timestamp=3061, K=7
+[2025-12-20 15:50:25.635] [info] Query command received: timestamp=3683, K=4
+[2025-12-20 15:50:25.694] [warning] StatisticsThread [0]: Slow buffer pop: 10.02ms
+[2025-12-20 15:50:25.706] [warning] StatisticsThread [0]: Slow buffer pop: 11.31ms
+[2025-12-20 15:50:25.736] [info] Query command received: timestamp=4127, K=4
+[2025-12-20 15:50:25.741] [info] Query command received: timestamp=4168, K=4
+[2025-12-20 15:50:25.756] [warning] StatisticsThread [0]: Slow buffer pop: 10.67ms
+[2025-12-20 15:50:25.757] [info] Query command received: timestamp=4240, K=4
+[2025-12-20 15:50:25.832] [info] Query command received: timestamp=4622, K=5
+[2025-12-20 15:50:25.875] [info] Query command received: timestamp=4802, K=3
+[2025-12-20 15:50:25.875] [info] InputThread: Submitting remaining 67 items in batch
+[2025-12-20 15:50:25.875] [info] Input file closed
+[2025-12-20 15:50:25.875] [info] =================================================
+[2025-12-20 15:50:25.875] [info] ===       InputThread Statistics              ===
+[2025-12-20 15:50:25.875] [info] =================================================
+[2025-12-20 15:50:25.875] [info] Total lines:        11698
+[2025-12-20 15:50:25.875] [info] Text lines:         11685
+[2025-12-20 15:50:25.875] [info] Query lines:        13
+[2025-12-20 15:50:25.875] [info] Total words:        38947
+[2025-12-20 15:50:25.875] [info] Avg words/text:     3.33
+[2025-12-20 15:50:25.875] [info] Total duration:     0.99s
+[2025-12-20 15:50:25.875] [info] Overall throughput: 11870.72 lines/sec
+[2025-12-20 15:50:25.875] [info] =================================================
+[2025-12-20 15:50:25.875] [info] <<< InputThread Terminated <<<
+[2025-12-20 15:50:25.876] [info] InputThread terminated
+[2025-12-20 15:50:25.876] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 15:50:25.876] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 15:50:25.876] [info] =================================================
+[2025-12-20 15:50:25.876] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 15:50:25.876] [info] =================================================
+[2025-12-20 15:50:25.876] [info] Processed slots:    11267
+[2025-12-20 15:50:25.876] [info] Processed queries:  0
+[2025-12-20 15:50:25.876] [info] Total duration:     0.99s
+[2025-12-20 15:50:25.876] [info] Overall throughput: 11428.75 slots/sec
+[2025-12-20 15:50:25.876] [info] =================================================
+[2025-12-20 15:50:25.876] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 15:50:25.876] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 15:50:25.876] [info] =================================================
+[2025-12-20 15:50:25.876] [info] =================================================
+[2025-12-20 15:50:25.876] [info] Processing completed successfully
+[2025-12-20 15:50:25.876] [info] Total duration: 1707 ms
+[2025-12-20 15:50:25.876] [info] Output file: ../data/../data/output2.txt
+[2025-12-20 15:50:25.876] [info] =================================================
+[2025-12-20 15:50:25.876] [info] Shutting down logger system...
+[2025-12-20 15:50:25.986] [info] Output file closed
+[2025-12-20 15:50:25.998] [info] =================================================
+[2025-12-20 15:50:25.998] [info] Hot Word Statistics System Starting
+[2025-12-20 15:50:25.998] [info] Input file: ../data/../data/input3.txt
+[2025-12-20 15:50:25.998] [info] Output file: ../data/../data/output3.txt
+[2025-12-20 15:50:25.998] [info] Creating HotWordSystem instance...
+[2025-12-20 15:50:25.998] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 15:50:25.998] [info] === SlidingWindow Initialized ===
+[2025-12-20 15:50:25.998] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 15:50:25.998] [info] QueryHandler initialized: output_file=../data/../data/output3.txt
+[2025-12-20 15:50:25.998] [info] =================================================
+[2025-12-20 15:50:25.998] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 15:50:25.998] [info] =================================================
+[2025-12-20 15:50:25.998] [info] Configuration:
+[2025-12-20 15:50:25.998] [info]   Input file:       ../data/../data/input3.txt
+[2025-12-20 15:50:25.998] [info]   Output file:      ../data/../data/output3.txt
+[2025-12-20 15:50:25.998] [info]   Buffer capacity:  300
+[2025-12-20 15:50:25.998] [info]   Low watermark:    60
+[2025-12-20 15:50:25.998] [info]   Window size:      600s (10min)
+[2025-12-20 15:50:25.998] [info]   Stat threads:     1
+[2025-12-20 15:50:25.998] [info] Creating InputThread...
+[2025-12-20 15:50:25.998] [info] === InputThread Initializing ===
+[2025-12-20 15:50:25.998] [info] Input file: ../data/../data/input3.txt
+[2025-12-20 15:50:25.998] [info] Batch size: 100
+[2025-12-20 15:50:25.998] [info] InputHandler initialized: input_file=../data/../data/input3.txt
+[2025-12-20 15:50:25.998] [info] === TextProcessor Initializing ===
+[2025-12-20 15:50:25.998] [info] Dictionary path: ../dict/
+[2025-12-20 15:50:25.998] [info] POS filter: Enabled
+[2025-12-20 15:50:26.663] [info] Valid POS tags loaded: 15 types
+[2025-12-20 15:50:26.663] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 15:50:26.663] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 15:50:26.674] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 15:50:26.674] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 15:50:26.674] [info] Stop words count: 1280
+[2025-12-20 15:50:26.674] [info] Sensitive words count: 41326
+[2025-12-20 15:50:26.674] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 15:50:26.674] [info] InputThread created successfully
+[2025-12-20 15:50:26.674] [info] Creating 1 StatisticsThreads...
+[2025-12-20 15:50:26.674] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 15:50:26.674] [info] 1 StatisticsThreads created successfully
+[2025-12-20 15:50:26.674] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 15:50:26.674] [info] =================================================
+[2025-12-20 15:50:26.674] [info] HotWordSystem created successfully
+[2025-12-20 15:50:26.674] [info] =================================================
+[2025-12-20 15:50:26.674] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 15:50:26.674] [info] =================================================
+[2025-12-20 15:50:26.674] [info] >>> InputThread Started <<<
+[2025-12-20 15:50:26.674] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 15:50:26.674] [info] System is now running...
+[2025-12-20 15:50:26.674] [info] =================================================
+[2025-12-20 15:50:26.674] [info] =================================================
+[2025-12-20 15:50:26.674] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 15:50:26.674] [info] =================================================
+[2025-12-20 15:50:26.674] [info] Waiting for InputThread to finish...
+[2025-12-20 15:50:26.674] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 15:50:26.674] [info] Input file opened successfully: ../data/../data/input3.txt
+[2025-12-20 15:50:26.688] [info] Query command received: timestamp=10, K=3
+[2025-12-20 15:50:26.692] [warning] StatisticsThread [0]: Slow buffer pop: 17.89ms
+[2025-12-20 15:50:26.692] [info] Output file opened successfully: ../data/../data/output3.txt
+[2025-12-20 15:50:26.715] [info] Query command received: timestamp=133, K=3
+[2025-12-20 15:50:26.767] [info] Query command received: timestamp=404, K=2
+[2025-12-20 15:50:26.859] [info] Query command received: timestamp=1020, K=5
+[2025-12-20 15:50:26.926] [info] Query command received: timestamp=1378, K=5
+[2025-12-20 15:50:27.009] [info] Query command received: timestamp=1730, K=10
+[2025-12-20 15:50:27.109] [info] Query command received: timestamp=2208, K=4
+[2025-12-20 15:50:27.210] [info] Query command received: timestamp=2479, K=5
+[2025-12-20 15:50:27.315] [info] Query command received: timestamp=2721, K=4
+[2025-12-20 15:50:27.408] [info] Query command received: timestamp=3067, K=3
+[2025-12-20 15:50:27.506] [info] Query command received: timestamp=3507, K=4
+[2025-12-20 15:50:27.601] [warning] StatisticsThread [0]: Slow buffer pop: 12.46ms
+[2025-12-20 15:50:27.612] [info] Query command received: timestamp=3981, K=5
+[2025-12-20 15:50:27.715] [info] Query command received: timestamp=4387, K=3
+[2025-12-20 15:50:27.822] [info] Query command received: timestamp=4841, K=6
+[2025-12-20 15:50:27.909] [info] Query command received: timestamp=5123, K=4
+[2025-12-20 15:50:27.956] [info] Query command received: timestamp=5325, K=3
+[2025-12-20 15:50:27.956] [info] InputThread: Submitting remaining 47 items in batch
+[2025-12-20 15:50:27.956] [info] Input file closed
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] ===       InputThread Statistics              ===
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] Total lines:        14930
+[2025-12-20 15:50:27.956] [info] Text lines:         14914
+[2025-12-20 15:50:27.956] [info] Query lines:        16
+[2025-12-20 15:50:27.956] [info] Total words:        53842
+[2025-12-20 15:50:27.956] [info] Avg words/text:     3.61
+[2025-12-20 15:50:27.956] [info] Total duration:     1.28s
+[2025-12-20 15:50:27.956] [info] Overall throughput: 11652.31 lines/sec
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] <<< InputThread Terminated <<<
+[2025-12-20 15:50:27.956] [info] InputThread terminated
+[2025-12-20 15:50:27.956] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 15:50:27.956] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] Processed slots:    14447
+[2025-12-20 15:50:27.956] [info] Processed queries:  0
+[2025-12-20 15:50:27.956] [info] Total duration:     1.28s
+[2025-12-20 15:50:27.956] [info] Overall throughput: 11271.62 slots/sec
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 15:50:27.956] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] Processing completed successfully
+[2025-12-20 15:50:27.956] [info] Total duration: 1958 ms
+[2025-12-20 15:50:27.956] [info] Output file: ../data/../data/output3.txt
+[2025-12-20 15:50:27.956] [info] =================================================
+[2025-12-20 15:50:27.956] [info] Shutting down logger system...
+[2025-12-20 15:50:28.068] [info] Output file closed
+[2025-12-20 16:03:35.192] [info] =================================================
+[2025-12-20 16:03:35.192] [info] Hot Word Statistics System Starting
+[2025-12-20 16:03:35.192] [info] Input file: ../data/../data/input1.txt
+[2025-12-20 16:03:35.192] [info] Output file: ../data/../data/output1.txt
+[2025-12-20 16:03:35.192] [info] Creating HotWordSystem instance...
+[2025-12-20 16:03:35.192] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 16:03:35.192] [info] === SlidingWindow Initialized ===
+[2025-12-20 16:03:35.192] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 16:03:35.192] [info] QueryHandler initialized: output_file=../data/../data/output1.txt
+[2025-12-20 16:03:35.192] [info] =================================================
+[2025-12-20 16:03:35.192] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 16:03:35.192] [info] =================================================
+[2025-12-20 16:03:35.192] [info] Configuration:
+[2025-12-20 16:03:35.192] [info]   Input file:       ../data/../data/input1.txt
+[2025-12-20 16:03:35.192] [info]   Output file:      ../data/../data/output1.txt
+[2025-12-20 16:03:35.192] [info]   Buffer capacity:  300
+[2025-12-20 16:03:35.192] [info]   Low watermark:    60
+[2025-12-20 16:03:35.192] [info]   Window size:      600s (10min)
+[2025-12-20 16:03:35.192] [info]   Stat threads:     1
+[2025-12-20 16:03:35.192] [info] Creating InputThread...
+[2025-12-20 16:03:35.192] [info] === InputThread Initializing ===
+[2025-12-20 16:03:35.192] [info] Input file: ../data/../data/input1.txt
+[2025-12-20 16:03:35.192] [info] Batch size: 100
+[2025-12-20 16:03:35.192] [info] InputHandler initialized: input_file=../data/../data/input1.txt
+[2025-12-20 16:03:35.192] [info] === TextProcessor Initializing ===
+[2025-12-20 16:03:35.192] [info] Dictionary path: ../dict/
+[2025-12-20 16:03:35.192] [info] POS filter: Enabled
+[2025-12-20 16:03:35.897] [info] Valid POS tags loaded: 15 types
+[2025-12-20 16:03:35.897] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 16:03:35.897] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 16:03:35.908] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 16:03:35.908] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 16:03:35.908] [info] Stop words count: 1280
+[2025-12-20 16:03:35.908] [info] Sensitive words count: 41326
+[2025-12-20 16:03:35.908] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 16:03:35.908] [info] InputThread created successfully
+[2025-12-20 16:03:35.908] [info] Creating 1 StatisticsThreads...
+[2025-12-20 16:03:35.908] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 16:03:35.908] [info] 1 StatisticsThreads created successfully
+[2025-12-20 16:03:35.908] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 16:03:35.908] [info] =================================================
+[2025-12-20 16:03:35.908] [info] HotWordSystem created successfully
+[2025-12-20 16:03:35.908] [info] =================================================
+[2025-12-20 16:03:35.908] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 16:03:35.908] [info] =================================================
+[2025-12-20 16:03:35.908] [info] >>> InputThread Started <<<
+[2025-12-20 16:03:35.908] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 16:03:35.908] [info] System is now running...
+[2025-12-20 16:03:35.908] [info] =================================================
+[2025-12-20 16:03:35.908] [info] =================================================
+[2025-12-20 16:03:35.908] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 16:03:35.908] [info] =================================================
+[2025-12-20 16:03:35.908] [info] Waiting for InputThread to finish...
+[2025-12-20 16:03:35.908] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 16:03:35.908] [info] Input file opened successfully: ../data/../data/input1.txt
+[2025-12-20 16:03:35.962] [info] Query command received: timestamp=267, K=6
+[2025-12-20 16:03:35.969] [info] Output file opened successfully: ../data/../data/output1.txt
+[2025-12-20 16:03:36.002] [info] Query command received: timestamp=496, K=4
+[2025-12-20 16:03:36.006] [warning] StatisticsThread [0]: Slow buffer pop: 12.20ms
+[2025-12-20 16:03:36.022] [warning] StatisticsThread [0]: Slow buffer pop: 14.99ms
+[2025-12-20 16:03:36.047] [warning] StatisticsThread [0]: Slow buffer pop: 16.14ms
+[2025-12-20 16:03:36.059] [info] Query command received: timestamp=758, K=7
+[2025-12-20 16:03:36.067] [warning] StatisticsThread [0]: Slow buffer pop: 11.49ms
+[2025-12-20 16:03:36.069] [info] Query command received: timestamp=807, K=3
+[2025-12-20 16:03:36.173] [info] Query command received: timestamp=1350, K=2
+[2025-12-20 16:03:36.210] [info] Query command received: timestamp=1540, K=3
+[2025-12-20 16:03:36.244] [warning] StatisticsThread [0]: Slow buffer pop: 10.57ms
+[2025-12-20 16:03:36.259] [warning] StatisticsThread [0]: Slow buffer pop: 13.65ms
+[2025-12-20 16:03:36.290] [info] Query command received: timestamp=1712, K=5
+[2025-12-20 16:03:36.390] [info] Query command received: timestamp=2286, K=6
+[2025-12-20 16:03:36.459] [info] Query command received: timestamp=2509, K=10
+[2025-12-20 16:03:36.521] [warning] StatisticsThread [0]: Slow buffer pop: 10.27ms
+[2025-12-20 16:03:36.532] [warning] StatisticsThread [0]: Slow buffer pop: 10.00ms
+[2025-12-20 16:03:36.533] [info] Query command received: timestamp=2849, K=6
+[2025-12-20 16:03:36.560] [warning] StatisticsThread [0]: Slow buffer pop: 10.99ms
+[2025-12-20 16:03:36.574] [info] Query command received: timestamp=2971, K=2
+[2025-12-20 16:03:36.576] [warning] StatisticsThread [0]: Slow buffer pop: 15.87ms
+[2025-12-20 16:03:36.607] [info] Query command received: timestamp=3102, K=2
+[2025-12-20 16:03:36.727] [warning] StatisticsThread [0]: Slow buffer pop: 13.59ms
+[2025-12-20 16:03:36.747] [info] Query command received: timestamp=3638, K=5
+[2025-12-20 16:03:36.857] [info] Query command received: timestamp=4309, K=3
+[2025-12-20 16:03:36.934] [info] Query command received: timestamp=4610, K=1
+[2025-12-20 16:03:36.967] [info] Query command received: timestamp=4811, K=4
+[2025-12-20 16:03:36.967] [info] InputThread: Submitting remaining 77 items in batch
+[2025-12-20 16:03:36.967] [info] Input file closed
+[2025-12-20 16:03:36.967] [info] =================================================
+[2025-12-20 16:03:36.967] [info] ===       InputThread Statistics              ===
+[2025-12-20 16:03:36.967] [info] =================================================
+[2025-12-20 16:03:36.967] [info] Total lines:        12870
+[2025-12-20 16:03:36.967] [info] Text lines:         12854
+[2025-12-20 16:03:36.967] [info] Query lines:        16
+[2025-12-20 16:03:36.967] [info] Total words:        41410
+[2025-12-20 16:03:36.967] [info] Avg words/text:     3.22
+[2025-12-20 16:03:36.967] [info] Total duration:     1.06s
+[2025-12-20 16:03:36.967] [info] Overall throughput: 12147.50 lines/sec
+[2025-12-20 16:03:36.967] [info] =================================================
+[2025-12-20 16:03:36.967] [info] <<< InputThread Terminated <<<
+[2025-12-20 16:03:36.967] [info] InputThread terminated
+[2025-12-20 16:03:36.967] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 16:03:36.968] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 16:03:36.968] [info] =================================================
+[2025-12-20 16:03:36.968] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 16:03:36.968] [info] =================================================
+[2025-12-20 16:03:36.968] [info] Processed slots:    12177
+[2025-12-20 16:03:36.968] [info] Processed queries:  0
+[2025-12-20 16:03:36.968] [info] Total duration:     1.06s
+[2025-12-20 16:03:36.968] [info] Overall throughput: 11487.85 slots/sec
+[2025-12-20 16:03:36.968] [info] =================================================
+[2025-12-20 16:03:36.968] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 16:03:36.968] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 16:03:36.968] [info] =================================================
+[2025-12-20 16:03:36.968] [info] =================================================
+[2025-12-20 16:03:36.968] [info] Processing completed successfully
+[2025-12-20 16:03:36.968] [info] Total duration: 1776 ms
+[2025-12-20 16:03:36.968] [info] Output file: ../data/../data/output1.txt
+[2025-12-20 16:03:36.968] [info] =================================================
+[2025-12-20 16:03:36.968] [info] Shutting down logger system...
+[2025-12-20 16:03:37.079] [info] Output file closed
+[2025-12-20 16:03:37.094] [info] =================================================
+[2025-12-20 16:03:37.094] [info] Hot Word Statistics System Starting
+[2025-12-20 16:03:37.094] [info] Input file: ../data/../data/input2.txt
+[2025-12-20 16:03:37.094] [info] Output file: ../data/../data/output2.txt
+[2025-12-20 16:03:37.094] [info] Creating HotWordSystem instance...
+[2025-12-20 16:03:37.094] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 16:03:37.094] [info] === SlidingWindow Initialized ===
+[2025-12-20 16:03:37.094] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 16:03:37.094] [info] QueryHandler initialized: output_file=../data/../data/output2.txt
+[2025-12-20 16:03:37.094] [info] =================================================
+[2025-12-20 16:03:37.094] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 16:03:37.094] [info] =================================================
+[2025-12-20 16:03:37.094] [info] Configuration:
+[2025-12-20 16:03:37.094] [info]   Input file:       ../data/../data/input2.txt
+[2025-12-20 16:03:37.094] [info]   Output file:      ../data/../data/output2.txt
+[2025-12-20 16:03:37.094] [info]   Buffer capacity:  300
+[2025-12-20 16:03:37.094] [info]   Low watermark:    60
+[2025-12-20 16:03:37.094] [info]   Window size:      600s (10min)
+[2025-12-20 16:03:37.094] [info]   Stat threads:     1
+[2025-12-20 16:03:37.094] [info] Creating InputThread...
+[2025-12-20 16:03:37.094] [info] === InputThread Initializing ===
+[2025-12-20 16:03:37.094] [info] Input file: ../data/../data/input2.txt
+[2025-12-20 16:03:37.094] [info] Batch size: 100
+[2025-12-20 16:03:37.094] [info] InputHandler initialized: input_file=../data/../data/input2.txt
+[2025-12-20 16:03:37.094] [info] === TextProcessor Initializing ===
+[2025-12-20 16:03:37.094] [info] Dictionary path: ../dict/
+[2025-12-20 16:03:37.094] [info] POS filter: Enabled
+[2025-12-20 16:03:37.749] [info] Valid POS tags loaded: 15 types
+[2025-12-20 16:03:37.749] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 16:03:37.750] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 16:03:37.758] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 16:03:37.758] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 16:03:37.758] [info] Stop words count: 1280
+[2025-12-20 16:03:37.758] [info] Sensitive words count: 41326
+[2025-12-20 16:03:37.758] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 16:03:37.758] [info] InputThread created successfully
+[2025-12-20 16:03:37.758] [info] Creating 1 StatisticsThreads...
+[2025-12-20 16:03:37.758] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 16:03:37.758] [info] 1 StatisticsThreads created successfully
+[2025-12-20 16:03:37.758] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 16:03:37.758] [info] =================================================
+[2025-12-20 16:03:37.758] [info] HotWordSystem created successfully
+[2025-12-20 16:03:37.758] [info] =================================================
+[2025-12-20 16:03:37.758] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 16:03:37.758] [info] =================================================
+[2025-12-20 16:03:37.758] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 16:03:37.758] [info] System is now running...
+[2025-12-20 16:03:37.758] [info] =================================================
+[2025-12-20 16:03:37.758] [info] =================================================
+[2025-12-20 16:03:37.758] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 16:03:37.758] [info] =================================================
+[2025-12-20 16:03:37.758] [info] Waiting for InputThread to finish...
+[2025-12-20 16:03:37.759] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 16:03:37.759] [info] >>> InputThread Started <<<
+[2025-12-20 16:03:37.759] [info] Input file opened successfully: ../data/../data/input2.txt
+[2025-12-20 16:03:37.775] [info] Query command received: timestamp=37, K=2
+[2025-12-20 16:03:37.777] [info] Output file opened successfully: ../data/../data/output2.txt
+[2025-12-20 16:03:37.831] [warning] StatisticsThread [0]: Slow buffer pop: 10.69ms
+[2025-12-20 16:03:37.878] [warning] StatisticsThread [0]: Slow buffer pop: 11.60ms
+[2025-12-20 16:03:37.917] [info] Query command received: timestamp=679, K=5
+[2025-12-20 16:03:37.973] [info] Query command received: timestamp=918, K=6
+[2025-12-20 16:03:38.023] [warning] StatisticsThread [0]: Slow buffer pop: 10.23ms
+[2025-12-20 16:03:38.034] [warning] StatisticsThread [0]: Slow buffer pop: 10.73ms
+[2025-12-20 16:03:38.086] [info] Query command received: timestamp=1409, K=3
+[2025-12-20 16:03:38.155] [info] Query command received: timestamp=1856, K=3
+[2025-12-20 16:03:38.212] [warning] StatisticsThread [0]: Slow buffer pop: 10.09ms
+[2025-12-20 16:03:38.284] [info] Query command received: timestamp=2564, K=1
+[2025-12-20 16:03:38.285] [warning] StatisticsThread [0]: Slow buffer pop: 12.78ms
+[2025-12-20 16:03:38.296] [warning] StatisticsThread [0]: Slow buffer pop: 10.38ms
+[2025-12-20 16:03:38.314] [warning] StatisticsThread [0]: Slow buffer pop: 17.22ms
+[2025-12-20 16:03:38.353] [warning] StatisticsThread [0]: Slow buffer pop: 12.65ms
+[2025-12-20 16:03:38.367] [warning] StatisticsThread [0]: Slow buffer pop: 13.37ms
+[2025-12-20 16:03:38.419] [info] Query command received: timestamp=3061, K=7
+[2025-12-20 16:03:38.439] [warning] StatisticsThread [0]: Slow buffer pop: 10.03ms
+[2025-12-20 16:03:38.527] [info] Query command received: timestamp=3683, K=4
+[2025-12-20 16:03:38.563] [warning] StatisticsThread [0]: Slow buffer pop: 14.02ms
+[2025-12-20 16:03:38.625] [info] Query command received: timestamp=4127, K=4
+[2025-12-20 16:03:38.631] [info] Query command received: timestamp=4168, K=4
+[2025-12-20 16:03:38.641] [info] Query command received: timestamp=4240, K=4
+[2025-12-20 16:03:38.712] [info] Query command received: timestamp=4622, K=5
+[2025-12-20 16:03:38.755] [info] Query command received: timestamp=4802, K=3
+[2025-12-20 16:03:38.755] [info] InputThread: Submitting remaining 67 items in batch
+[2025-12-20 16:03:38.755] [info] Input file closed
+[2025-12-20 16:03:38.755] [info] =================================================
+[2025-12-20 16:03:38.755] [info] ===       InputThread Statistics              ===
+[2025-12-20 16:03:38.755] [info] =================================================
+[2025-12-20 16:03:38.755] [info] Total lines:        11698
+[2025-12-20 16:03:38.755] [info] Text lines:         11685
+[2025-12-20 16:03:38.755] [info] Query lines:        13
+[2025-12-20 16:03:38.755] [info] Total words:        38947
+[2025-12-20 16:03:38.755] [info] Avg words/text:     3.33
+[2025-12-20 16:03:38.755] [info] Total duration:     1.00s
+[2025-12-20 16:03:38.755] [info] Overall throughput: 11739.96 lines/sec
+[2025-12-20 16:03:38.755] [info] =================================================
+[2025-12-20 16:03:38.755] [info] <<< InputThread Terminated <<<
+[2025-12-20 16:03:38.755] [info] InputThread terminated
+[2025-12-20 16:03:38.755] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 16:03:38.756] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 16:03:38.756] [info] =================================================
+[2025-12-20 16:03:38.756] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 16:03:38.756] [info] =================================================
+[2025-12-20 16:03:38.756] [info] Processed slots:    11267
+[2025-12-20 16:03:38.756] [info] Processed queries:  0
+[2025-12-20 16:03:38.756] [info] Total duration:     1.00s
+[2025-12-20 16:03:38.756] [info] Overall throughput: 11298.63 slots/sec
+[2025-12-20 16:03:38.756] [info] =================================================
+[2025-12-20 16:03:38.756] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 16:03:38.756] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 16:03:38.756] [info] =================================================
+[2025-12-20 16:03:38.756] [info] =================================================
+[2025-12-20 16:03:38.756] [info] Processing completed successfully
+[2025-12-20 16:03:38.756] [info] Total duration: 1661 ms
+[2025-12-20 16:03:38.756] [info] Output file: ../data/../data/output2.txt
+[2025-12-20 16:03:38.756] [info] =================================================
+[2025-12-20 16:03:38.756] [info] Shutting down logger system...
+[2025-12-20 16:03:38.867] [info] Output file closed
+[2025-12-20 16:03:38.879] [info] =================================================
+[2025-12-20 16:03:38.879] [info] Hot Word Statistics System Starting
+[2025-12-20 16:03:38.879] [info] Input file: ../data/../data/input3.txt
+[2025-12-20 16:03:38.879] [info] Output file: ../data/../data/output3.txt
+[2025-12-20 16:03:38.879] [info] Creating HotWordSystem instance...
+[2025-12-20 16:03:38.879] [info] Parameters: buffer_capacity_=300s, low_watermark_=60s, window_size_=600, running_=1
+[2025-12-20 16:03:38.879] [info] === SlidingWindow Initialized ===
+[2025-12-20 16:03:38.879] [info] Window size: 600 seconds (10 minutes)
+[2025-12-20 16:03:38.879] [info] QueryHandler initialized: output_file=../data/../data/output3.txt
+[2025-12-20 16:03:38.879] [info] =================================================
+[2025-12-20 16:03:38.879] [info] ===     HotWordSystem Initializing            ===
+[2025-12-20 16:03:38.879] [info] =================================================
+[2025-12-20 16:03:38.879] [info] Configuration:
+[2025-12-20 16:03:38.879] [info]   Input file:       ../data/../data/input3.txt
+[2025-12-20 16:03:38.879] [info]   Output file:      ../data/../data/output3.txt
+[2025-12-20 16:03:38.879] [info]   Buffer capacity:  300
+[2025-12-20 16:03:38.879] [info]   Low watermark:    60
+[2025-12-20 16:03:38.879] [info]   Window size:      600s (10min)
+[2025-12-20 16:03:38.879] [info]   Stat threads:     1
+[2025-12-20 16:03:38.879] [info] Creating InputThread...
+[2025-12-20 16:03:38.879] [info] === InputThread Initializing ===
+[2025-12-20 16:03:38.879] [info] Input file: ../data/../data/input3.txt
+[2025-12-20 16:03:38.879] [info] Batch size: 100
+[2025-12-20 16:03:38.879] [info] InputHandler initialized: input_file=../data/../data/input3.txt
+[2025-12-20 16:03:38.879] [info] === TextProcessor Initializing ===
+[2025-12-20 16:03:38.879] [info] Dictionary path: ../dict/
+[2025-12-20 16:03:38.879] [info] POS filter: Enabled
+[2025-12-20 16:03:39.542] [info] Valid POS tags loaded: 15 types
+[2025-12-20 16:03:39.542] [info] Loading stop words from: ../dict/stop_words.utf8
+[2025-12-20 16:03:39.542] [info] Stop words loaded successfully: 1280 words
+[2025-12-20 16:03:39.552] [info] Sensitive words loaded successfully: 41326 words
+[2025-12-20 16:03:39.552] [info] >>> TextProcessor Initialized Successfully <<<
+[2025-12-20 16:03:39.552] [info] Stop words count: 1280
+[2025-12-20 16:03:39.552] [info] Sensitive words count: 41326
+[2025-12-20 16:03:39.552] [info] >>> InputThread Initialized Successfully <<<
+[2025-12-20 16:03:39.552] [info] InputThread created successfully
+[2025-12-20 16:03:39.552] [info] Creating 1 StatisticsThreads...
+[2025-12-20 16:03:39.552] [info] === StatisticsThread [0] Initialized ===
+[2025-12-20 16:03:39.552] [info] 1 StatisticsThreads created successfully
+[2025-12-20 16:03:39.552] [info] >>> HotWordSystem Initialized Successfully <<<
+[2025-12-20 16:03:39.552] [info] =================================================
+[2025-12-20 16:03:39.552] [info] HotWordSystem created successfully
+[2025-12-20 16:03:39.552] [info] =================================================
+[2025-12-20 16:03:39.552] [info] ===        HotWordSystem Starting             ===
+[2025-12-20 16:03:39.552] [info] =================================================
+[2025-12-20 16:03:39.552] [info] >>> InputThread Started <<<
+[2025-12-20 16:03:39.552] [info] >>> All Threads Started Successfully <<<
+[2025-12-20 16:03:39.552] [info] System is now running...
+[2025-12-20 16:03:39.552] [info] =================================================
+[2025-12-20 16:03:39.552] [info] =================================================
+[2025-12-20 16:03:39.552] [info] ===    Waiting for Threads to Terminate       ===
+[2025-12-20 16:03:39.552] [info] =================================================
+[2025-12-20 16:03:39.552] [info] Waiting for InputThread to finish...
+[2025-12-20 16:03:39.552] [info] >>> StatisticsThread [0] Started <<<
+[2025-12-20 16:03:39.552] [info] Input file opened successfully: ../data/../data/input3.txt
+[2025-12-20 16:03:39.560] [info] Query command received: timestamp=10, K=3
+[2025-12-20 16:03:39.563] [warning] StatisticsThread [0]: Slow buffer pop: 10.61ms
+[2025-12-20 16:03:39.563] [info] Output file opened successfully: ../data/../data/output3.txt
+[2025-12-20 16:03:39.583] [info] Query command received: timestamp=133, K=3
+[2025-12-20 16:03:39.610] [warning] StatisticsThread [0]: Slow buffer pop: 10.52ms
+[2025-12-20 16:03:39.630] [warning] StatisticsThread [0]: Slow buffer pop: 10.51ms
+[2025-12-20 16:03:39.635] [info] Query command received: timestamp=404, K=2
+[2025-12-20 16:03:39.728] [info] Query command received: timestamp=1020, K=5
+[2025-12-20 16:03:39.788] [warning] StatisticsThread [0]: Slow buffer pop: 10.94ms
+[2025-12-20 16:03:39.800] [info] Query command received: timestamp=1378, K=5
+[2025-12-20 16:03:39.847] [warning] StatisticsThread [0]: Slow buffer pop: 11.76ms
+[2025-12-20 16:03:39.887] [info] Query command received: timestamp=1730, K=10
+[2025-12-20 16:03:39.909] [warning] StatisticsThread [0]: Slow buffer pop: 18.92ms
+[2025-12-20 16:03:39.990] [info] Query command received: timestamp=2208, K=4
+[2025-12-20 16:03:40.087] [info] Query command received: timestamp=2479, K=5
+[2025-12-20 16:03:40.185] [info] Query command received: timestamp=2721, K=4
+[2025-12-20 16:03:40.276] [info] Query command received: timestamp=3067, K=3
+[2025-12-20 16:03:40.376] [info] Query command received: timestamp=3507, K=4
+[2025-12-20 16:03:40.477] [info] Query command received: timestamp=3981, K=5
+[2025-12-20 16:03:40.584] [info] Query command received: timestamp=4387, K=3
+[2025-12-20 16:03:40.695] [info] Query command received: timestamp=4841, K=6
+[2025-12-20 16:03:40.729] [warning] StatisticsThread [0]: Slow buffer pop: 10.77ms
+[2025-12-20 16:03:40.751] [warning] StatisticsThread [0]: Slow buffer pop: 12.37ms
+[2025-12-20 16:03:40.765] [warning] StatisticsThread [0]: Slow buffer pop: 13.11ms
+[2025-12-20 16:03:40.794] [info] Query command received: timestamp=5123, K=4
+[2025-12-20 16:03:40.838] [info] Query command received: timestamp=5325, K=3
+[2025-12-20 16:03:40.838] [info] InputThread: Submitting remaining 47 items in batch
+[2025-12-20 16:03:40.838] [info] Input file closed
+[2025-12-20 16:03:40.838] [info] =================================================
+[2025-12-20 16:03:40.838] [info] ===       InputThread Statistics              ===
+[2025-12-20 16:03:40.838] [info] =================================================
+[2025-12-20 16:03:40.838] [info] Total lines:        14930
+[2025-12-20 16:03:40.838] [info] Text lines:         14914
+[2025-12-20 16:03:40.838] [info] Query lines:        16
+[2025-12-20 16:03:40.838] [info] Total words:        53842
+[2025-12-20 16:03:40.838] [info] Avg words/text:     3.61
+[2025-12-20 16:03:40.838] [info] Total duration:     1.29s
+[2025-12-20 16:03:40.838] [info] Overall throughput: 11606.90 lines/sec
+[2025-12-20 16:03:40.838] [info] =================================================
+[2025-12-20 16:03:40.838] [info] <<< InputThread Terminated <<<
+[2025-12-20 16:03:40.839] [info] InputThread terminated
+[2025-12-20 16:03:40.839] [info] Waiting for 1 StatisticsThreads to finish...
+[2025-12-20 16:03:40.839] [info] StatisticsThread [0]: Buffer closed, exiting
+[2025-12-20 16:03:40.839] [info] =================================================
+[2025-12-20 16:03:40.839] [info] ===  StatisticsThread [0] Statistics         ===
+[2025-12-20 16:03:40.839] [info] =================================================
+[2025-12-20 16:03:40.839] [info] Processed slots:    14447
+[2025-12-20 16:03:40.839] [info] Processed queries:  0
+[2025-12-20 16:03:40.839] [info] Total duration:     1.29s
+[2025-12-20 16:03:40.839] [info] Overall throughput: 11227.47 slots/sec
+[2025-12-20 16:03:40.839] [info] =================================================
+[2025-12-20 16:03:40.839] [info] <<< StatisticsThread [0] Terminated <<<
+[2025-12-20 16:03:40.839] [info] >>> All Threads Terminated Successfully <<<
+[2025-12-20 16:03:40.839] [info] =================================================
+[2025-12-20 16:03:40.839] [info] =================================================
+[2025-12-20 16:03:40.839] [info] Processing completed successfully
+[2025-12-20 16:03:40.839] [info] Total duration: 1960 ms
+[2025-12-20 16:03:40.839] [info] Output file: ../data/../data/output3.txt
+[2025-12-20 16:03:40.839] [info] =================================================
+[2025-12-20 16:03:40.839] [info] Shutting down logger system...
+[2025-12-20 16:03:40.957] [info] Output file closed

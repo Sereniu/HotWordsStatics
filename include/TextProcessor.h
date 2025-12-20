@@ -63,14 +63,14 @@ private:
     //判断是否为停用词
     bool isStopWord(const std::string& word) const;
 
-    //判断词语是否有效（标点过滤符号，无意义符号等）
-    bool isValidWord(const std::string& word) const;
-
     //判断是否为敏感词
     bool isSensitiveWord(const std::string& word) const;
 
     //判断词性是否有效
     bool isValidPOS(const std::string& pos) const;
+
+    //判断词是否有效
+    bool isValidWord(const std::string &word) const;
 };
 
 #endif

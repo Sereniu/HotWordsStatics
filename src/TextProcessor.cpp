@@ -1,8 +1,14 @@
 #include "TextProcessor.h"
+#include "spdlog/spdlog.h"
+#include <chrono>
 
 TextProcessor::TextProcessor(const std::string &dict_path,bool enable_pos_filter):enable_pos_filter_(enable_pos_filter)
 {
 try {
+
+        spdlog::info("=== TextProcessor Initializing ===");
+        spdlog::info("Dictionary path: {}", dict_path);
+        spdlog::info("POS filter: {}", enable_pos_filter_ ? "Enabled" : "Disabled");
         // 初始化 jieba 分词器（加载 5 个核心词典）
         jieba_ = std::make_unique<cppjieba::Jieba>(
             dict_path + "jieba.dict.utf8",       // 主词典
@@ -14,19 +20,19 @@ try {
 
         if(enable_pos_filter_){
             initValidPOS();
+            spdlog::info("Valid POS tags loaded: {} types", valid_pos_.size());
         }
         
         // 加载停用词到内存哈希表
         loadStopWords(dict_path+"stop_words.utf8");
         loadSensitiveWords(dict_path+"sensitive_words.utf8");
         
-        std::cout << "[TextProcessor] [信息] TextProcessor 初始化成功" << std::endl;
-        std::cout << "[TextProcessor] [信息] 停用词数量: " << stop_words_.size() << std::endl;
-        std::cout << "[TextProcessor] [信息] 敏感词数量: " << sensitive_words_.size() << std::endl;
-        std::cout << "[TextProcessor] [信息] 词性过滤: " << (enable_pos_filter_ ? "启用" : "禁用") << std::endl;
+        spdlog::info(">>> TextProcessor Initialized Successfully <<<");
+        spdlog::info("Stop words count: {}", stop_words_.size());
+        spdlog::info("Sensitive words count: {}", sensitive_words_.size());
     
     } catch (const std::exception& e) {
-        std::cerr << "[TextProcessor] [错误] TextProcessor 初始化失败: " << e.what() << std::endl;
+        spdlog::critical("TextProcessor initialization failed: {}", e.what());
         throw;
     }
 }
@@ -34,14 +40,37 @@ try {
 TextProcessor::~TextProcessor()=default;
 
 std::vector<std::string> TextProcessor::process(const std::string &text)
-{
+{   
+    auto start_time = std::chrono::high_resolution_clock::now();
+
     if(text.empty()){
+        spdlog::debug("Empty text input, skipping processing");
         return {};
     }
 
+    size_t original_length = text.length();
+    spdlog::trace("Processing text: length={}, preview='{}'", 
+                  original_length, 
+                  text.substr(0, std::min(size_t(50), original_length)));
+
     //分词
     std::vector<std::string> raw_words;
-    jieba_->Cut(text, raw_words, true);  // true = 使用 HMM
+    auto segment_start = std::chrono::high_resolution_clock::now();
+
+    try {
+        jieba_->Cut(text, raw_words, true);  // true = 使用 HMM
+    } catch (const std::exception& e) {
+        //分词失败
+        spdlog::error("Segmentation failed: {} | Text: '{}'", 
+                     e.what(), text.substr(0, 100));
+        return {};
+    }
+
+    auto segment_end = std::chrono::high_resolution_clock::now();
+    auto segment_ms = std::chrono::duration<double, std::milli>(segment_end - segment_start).count();
+
+    spdlog::debug("Segmentation result: {} words from {} chars", 
+                  raw_words.size(), original_length);
 
     //过滤和清洗
     std::vector<std::string> result;
@@ -52,22 +81,59 @@ std::vector<std::string> TextProcessor::process(const std::string &text)
             result.push_back(word);
         }
     }
+   
+    //记录耗时
+    auto end_time = std::chrono::high_resolution_clock::now();
+    auto total_ms = std::chrono::duration<double, std::milli>(end_time - start_time).count();
+    auto filter_ms = total_ms - segment_ms;
     
+    auto perf_logger = spdlog::get("perf");
+    if (perf_logger) {
+        perf_logger->info("{},preprocess_total_ms,{:.3f}", std::time(nullptr), total_ms);
+        perf_logger->info("{},segment_ms,{:.3f}", std::time(nullptr), segment_ms);
+        perf_logger->info("{},filter_ms,{:.3f}", std::time(nullptr), filter_ms);
+        perf_logger->info("{},text_length,{}", std::time(nullptr), original_length);
+        perf_logger->info("{},words_segmented,{}", std::time(nullptr), raw_words.size());
+        perf_logger->info("{},words_valid,{}", std::time(nullptr), result.size());
+    }
+    
+    spdlog::debug("Processing time: segment={:.2f}ms, filter={:.2f}ms, total={:.2f}ms",
+                  segment_ms, filter_ms, total_ms);
+    
+    // 耗时过长
+    if (total_ms > 100.0) {
+        spdlog::warn("Slow text processing: {:.2f}ms (threshold: 100ms) for {} chars", 
+                     total_ms, original_length);
+    }
     return result;
 }
 
 std::vector<std::string> TextProcessor::processWithPOS(const std::string &text)
 {
-    if(text.empty()){
+    //计时开始
+    auto start_time = std::chrono::high_resolution_clock::now();
+    
+    //\空文本检测
+    if (text.empty()) {
+        spdlog::debug("Empty text input (POS mode), skipping processing");
         return {};
     }
 
-    //标注词性
-    std::vector<std::pair<std::string, std::string>> tagged_words;
-    jieba_->Tag(text, tagged_words);
+    spdlog::debug("Processing text with POS tagging: length={}", text.length());
 
-    //过滤
-     std::vector<std::string> result;
+    // 标注词性
+    std::vector<std::pair<std::string, std::string>> tagged_words;
+    try {
+        jieba_->Tag(text, tagged_words);
+    } catch (const std::exception& e) {
+        // 【异常处理】词性标注失败
+        spdlog::error("POS tagging failed: {} | Text: '{}'", 
+                     e.what(), text.substr(0, 100));
+        return {};
+    }
+
+    // 过滤
+    std::vector<std::string> result;
     result.reserve(tagged_words.size());
     
     for (const auto& pair : tagged_words) {
@@ -78,16 +144,27 @@ std::vector<std::string> TextProcessor::processWithPOS(const std::string &text)
             result.push_back(word);
         }
     }
+
+    // 记录耗时
+    auto end_time = std::chrono::high_resolution_clock::now();
+    auto duration_ms = std::chrono::duration<double, std::milli>(end_time - start_time).count();
+    
+    auto perf_logger = spdlog::get("perf");
+    if (perf_logger) {
+        perf_logger->info("{},preprocess_pos_ms,{:.3f}", std::time(nullptr), duration_ms);
+    }
+    
     return result;
 }
 
 void TextProcessor::loadStopWords(const std::string &file_path)
 {   
+    spdlog::info("Loading stop words from: {}", file_path);
     //以二进制打开，避免编码问题
     std::ifstream file(file_path, std::ios::binary);
     if (!file.is_open()) {
-        std::cerr << "[TextProcessor] [警告] 无法打开停用词文件: " << file_path << std::endl;
-        std::cerr << "[TextProcessor] [警告] 将不进行停用词过滤" << std::endl;
+        spdlog::warn("Cannot open stop words file: {}", file_path);
+        spdlog::warn("Stop words filtering will be disabled");
         return;
     }
     
@@ -109,41 +186,12 @@ void TextProcessor::loadStopWords(const std::string &file_path)
     }
     
     file.close();
+    spdlog::info("Stop words loaded successfully: {} words", stop_words_.size());
 }
 
 bool TextProcessor::isStopWord(const std::string &word) const
 {
     return stop_words_.find(word)!=stop_words_.end();
-}
-
-bool TextProcessor::isValidWord(const std::string &word) const
-{   
-    // 1. 过滤空字符串
-    if (word.empty()) {
-        return false;
-    }
-    
-    // 2. 过滤纯空白字符（空格、制表符、换行符等）
-    if (word.find_first_not_of(" \t\n\r") == std::string::npos) {
-        return false;
-    }
-    
-    // 3. 过滤单个空格
-    if (word == " ") {
-        return false;
-    }
-    
-    // 4. 停用词过滤
-    if (isStopWord(word)) {
-        return false;
-    }
-
-    // 5. 敏感词过滤
-    if (isSensitiveWord(word)) {
-        return false;
-    }
-    
-    return true;
 }
 
 bool TextProcessor::isSensitiveWord(const std::string &word) const
@@ -184,6 +232,7 @@ void TextProcessor::initValidPOS()
         "x"    // 非语素字（保留，可能是专有名词）
 
     };
+    spdlog::debug("Valid POS initialized: {} types", valid_pos_.size());
 }
 
 void TextProcessor::loadSensitiveWords(const std::string &file_path)
@@ -191,7 +240,7 @@ void TextProcessor::loadSensitiveWords(const std::string &file_path)
     //以二进制打开，避免编码问题
     std::ifstream file(file_path, std::ios::binary);
     if (!file.is_open()) {
-        std::cerr << "[TextProcessor] [警告] 无法打开停用词文件: " << file_path<<" 不需要敏感词过滤可忽略该错误" << std::endl;
+        spdlog::info("Sensitive words file not found: {} (optional feature)", file_path);
         return;
     }
     
@@ -213,5 +262,35 @@ void TextProcessor::loadSensitiveWords(const std::string &file_path)
     }
     
     file.close();
+    spdlog::info("Sensitive words loaded successfully: {} words", sensitive_words_.size());
+}
 
+bool TextProcessor::isValidWord(const std::string &word) const
+{   
+    // 1. 过滤空字符串
+    if (word.empty()) {
+        return false;
+    }
+    
+    // 2. 过滤纯空白字符（空格、制表符、换行符等）
+    if (word.find_first_not_of(" \t\n\r") == std::string::npos) {
+        return false;
+    }
+    
+    // 3. 过滤单个空格
+    if (word == " ") {
+        return false;
+    }
+    
+    // 4. 停用词过滤
+    if (isStopWord(word)) {
+        return false;
+    }
+
+    // 5. 敏感词过滤
+    if (isSensitiveWord(word)) {
+        return false;
+    }
+    
+    return true;
 }

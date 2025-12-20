@@ -4,10 +4,12 @@
 #include <string>
 #include <regex>
 #include <iostream>
+#include "spdlog/spdlog.h"
 using namespace std;
 
 InputHandler::InputHandler(const std::string &input_file):input_file_(input_file)
 {
+    spdlog::info("InputHandler initialized: input_file={}", input_file_);
 }
 
 InputHandler::~InputHandler()
@@ -20,10 +22,10 @@ bool InputHandler::open()
     file_stream_.open(input_file_);
     
     if(!file_stream_.is_open()){
-        std::cerr<<"[InputHandler] [错误] 没有办法打开文件 "<<input_file_<<std::endl;
+        spdlog::critical("Failed to open input file: {}", input_file_);
         return false;
     }
-
+    spdlog::info("Input file opened successfully: {}", input_file_);
     return true;
 }
 
@@ -31,6 +33,7 @@ void InputHandler::close()
 {   
     if(file_stream_.is_open()){
         file_stream_.close();
+        spdlog::info("Input file closed");
     }
 }
 
@@ -42,8 +45,16 @@ bool InputHandler::readLine(unsigned int &timestamp, std::string &text, bool &is
     }
 
     timestamp=parseTimestamp(line);
-    if(timestamp>ts)ts=timestamp;
-    else timestamp=ts;
+
+    // 【异常处理】时间戳乱序/迟到检测
+    if (timestamp > ts) {
+        ts = timestamp;
+    } else {
+        spdlog::debug("Out-of-order timestamp detected: current={}, previous={}", 
+                     timestamp, ts);
+        timestamp = ts;
+    }
+
     text=extractText(line);
     k = parseQueryCommand(line);
     is_query=(k==-1)?false:true;

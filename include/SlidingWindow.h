@@ -64,6 +64,9 @@ public:
     size_t getUniqueWords() const;
 
     unsigned int currentTime() const;
+
+    //内存占用
+    size_t estimateMemoryUsage() const;
     
 private:
 

@@ -60,6 +60,6 @@ int main(){
 
 /**
  * cd HotWordsStatics/src
- * g++ -std=c++17 test_TextProcessor.cpp TextProcessor.cpp -pthread -o test_TextProcessor
+ * g++ -std=c++17 test_TextProcessor.cpp ../src/TextProcessor.cpp -pthread -o test_TextProcessor -I ../include
  * ./test_TextProcessor
  */

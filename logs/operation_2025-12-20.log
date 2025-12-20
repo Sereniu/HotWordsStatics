@@ -1,0 +1,402 @@
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=267, K=6
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=267, K=6, results=[诸葛(15), 诸葛亮(14), 丞相(13), 诸葛均(11), 孔明(11)...]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=496, K=4
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=496, K=4, results=[刘备(23), 诸葛亮(21), 诸葛(18), 丞相(18)]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=758, K=7
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=758, K=7, results=[诸葛亮(35), 刘备(27), 丞相(20), 庞统(17), 诸葛均(16)...]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=807, K=3
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=807, K=3, results=[诸葛亮(35), 刘备(28), 庞统(18)]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=1350, K=2
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=1350, K=2, results=[刘备(32), 张飞(29)]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=1540, K=3
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=1540, K=3, results=[刘备(32), 张飞(31), 睡(25)]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=1712, K=5
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=1712, K=5, results=[睡(45), 丞相(40), 张飞(26), 二爷(25), 刘备(24)]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=2286, K=6
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=2286, K=6, results=[刘备(48), 荆州(26), 诸葛亮(22), 丞相(17), 地震(16)...]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=2509, K=10
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=2509, K=10, results=[刘备(66), 诸葛亮(50), 哭(46), 丞相(34), 荆州(28)...]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=2849, K=6
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=2849, K=6, results=[丞相(82), 诸葛亮(63), 刘备(56), 哭(49), 诸葛(23)...]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=2971, K=2
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=2971, K=2, results=[丞相(84), 诸葛亮(46)]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=3102, K=2
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=3102, K=2, results=[丞相(65), 诸葛亮(28)]
+[2025-12-20 14:28:09] [OPERATION] Query enqueued: timestamp=3638, K=5
+[2025-12-20 14:28:09] [OPERATION] Query executed: timestamp=3638, K=5, results=[诸葛亮(60), 刘备(59), 徐庶(53), 夏侯惇(37), 曹操(36)]
+[2025-12-20 14:28:10] [OPERATION] Query enqueued: timestamp=4309, K=3
+[2025-12-20 14:28:10] [OPERATION] Query executed: timestamp=4309, K=3, results=[子龙(31), 刘备(30), 赵云(21)]
+[2025-12-20 14:28:10] [OPERATION] Query enqueued: timestamp=4610, K=1
+[2025-12-20 14:28:10] [OPERATION] Query executed: timestamp=4610, K=1, results=[夏侯惇(64)]
+[2025-12-20 14:28:10] [OPERATION] Query enqueued: timestamp=4811, K=4
+[2025-12-20 14:28:10] [OPERATION] Query executed: timestamp=4812, K=4, results=[夏侯惇(62), 刘备(45), 赵云(27), 香槟(18)]
+[2025-12-20 14:28:30] [OPERATION] Query enqueued: timestamp=37, K=2
+[2025-12-20 14:28:30] [OPERATION] Query executed: timestamp=37, K=2, results=[先登(7), 小时(6)]
+[2025-12-20 14:28:30] [OPERATION] Query enqueued: timestamp=679, K=5
+[2025-12-20 14:28:30] [OPERATION] Query executed: timestamp=679, K=5, results=[刘备(51), 水镜(27), 诸葛亮(19), 三国(18), 听(18)]
+[2025-12-20 14:28:30] [OPERATION] Query enqueued: timestamp=918, K=6
+[2025-12-20 14:28:30] [OPERATION] Query executed: timestamp=918, K=6, results=[刘备(49), 赵云(38), 水镜(25), 徐庶(20), 庞统(20)...]
+[2025-12-20 14:28:30] [OPERATION] Query enqueued: timestamp=1409, K=3
+[2025-12-20 14:28:30] [OPERATION] Query executed: timestamp=1409, K=3, results=[刘备(62), 曹操(45), 庞统(40)]
+[2025-12-20 14:28:30] [OPERATION] Query enqueued: timestamp=1856, K=3
+[2025-12-20 14:28:30] [OPERATION] Query executed: timestamp=1856, K=3, results=[赵云(35), 李典(32), 子龙(26)]
+[2025-12-20 14:28:30] [OPERATION] Query enqueued: timestamp=2564, K=1
+[2025-12-20 14:28:30] [OPERATION] Query executed: timestamp=2564, K=1, results=[曹仁(41)]
+[2025-12-20 14:28:30] [OPERATION] Query enqueued: timestamp=3061, K=7
+[2025-12-20 14:28:30] [OPERATION] Query executed: timestamp=3061, K=7, results=[程昱(75), 徐庶(47), 徐母(40), 曹操(40), 老板(25)...]
+[2025-12-20 14:28:31] [OPERATION] Query enqueued: timestamp=3683, K=4
+[2025-12-20 14:28:31] [OPERATION] Query executed: timestamp=3683, K=4, results=[刘备(62), 徐庶(55), 曹操(28), 没有(21)]
+[2025-12-20 14:28:31] [OPERATION] Query enqueued: timestamp=4127, K=4
+[2025-12-20 14:28:31] [OPERATION] Query enqueued: timestamp=4168, K=4
+[2025-12-20 14:28:31] [OPERATION] Query executed: timestamp=4127, K=4, results=[徐庶(58), 刘备(52), 走(43), 知道(31)]
+[2025-12-20 14:28:31] [OPERATION] Query executed: timestamp=4168, K=4, results=[徐庶(58), 刘备(46), 走(43), 知道(31)]
+[2025-12-20 14:28:31] [OPERATION] Query enqueued: timestamp=4240, K=4
+[2025-12-20 14:28:31] [OPERATION] Query executed: timestamp=4240, K=4, results=[徐庶(62), 刘备(50), 走(45), 知道(31)]
+[2025-12-20 14:28:31] [OPERATION] Query enqueued: timestamp=4622, K=5
+[2025-12-20 14:28:31] [OPERATION] Query executed: timestamp=4622, K=5, results=[徐庶(85), 徐母(51), 曹操(34), 刘备(31), 骂(29)]
+[2025-12-20 14:28:31] [OPERATION] Query enqueued: timestamp=4802, K=3
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=267, K=6
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=267, K=6, results=[诸葛(15), 诸葛亮(14), 丞相(13), 诸葛均(11), 孔明(11)...]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=496, K=4
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=496, K=4, results=[刘备(23), 诸葛亮(21), 诸葛(18), 丞相(18)]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=758, K=7
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=758, K=7, results=[诸葛亮(35), 刘备(27), 丞相(20), 庞统(17), 诸葛均(16)...]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=807, K=3
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=807, K=3, results=[诸葛亮(35), 刘备(28), 庞统(18)]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=1350, K=2
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=1350, K=2, results=[刘备(32), 张飞(29)]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=1540, K=3
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=1540, K=3, results=[刘备(32), 张飞(31), 睡(25)]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=1712, K=5
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=1712, K=5, results=[睡(45), 丞相(40), 张飞(26), 二爷(25), 刘备(24)]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=2286, K=6
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=2286, K=6, results=[刘备(48), 荆州(26), 诸葛亮(22), 丞相(17), 地震(16)...]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=2509, K=10
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=2509, K=10, results=[刘备(66), 诸葛亮(50), 哭(46), 丞相(34), 荆州(28)...]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=2849, K=6
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=2849, K=6, results=[丞相(82), 诸葛亮(63), 刘备(56), 哭(49), 诸葛(23)...]
+[2025-12-20 14:28:45] [OPERATION] Query enqueued: timestamp=2971, K=2
+[2025-12-20 14:28:45] [OPERATION] Query executed: timestamp=2971, K=2, results=[丞相(84), 诸葛亮(46)]
+[2025-12-20 14:28:46] [OPERATION] Query enqueued: timestamp=3102, K=2
+[2025-12-20 14:28:46] [OPERATION] Query executed: timestamp=3102, K=2, results=[丞相(65), 诸葛亮(28)]
+[2025-12-20 14:28:46] [OPERATION] Query enqueued: timestamp=3638, K=5
+[2025-12-20 14:28:46] [OPERATION] Query executed: timestamp=3638, K=5, results=[诸葛亮(60), 刘备(59), 徐庶(53), 夏侯惇(37), 曹操(36)]
+[2025-12-20 14:28:46] [OPERATION] Query enqueued: timestamp=4309, K=3
+[2025-12-20 14:28:46] [OPERATION] Query executed: timestamp=4309, K=3, results=[子龙(31), 刘备(30), 赵云(21)]
+[2025-12-20 14:28:46] [OPERATION] Query enqueued: timestamp=4610, K=1
+[2025-12-20 14:28:46] [OPERATION] Query executed: timestamp=4610, K=1, results=[夏侯惇(64)]
+[2025-12-20 14:28:46] [OPERATION] Query enqueued: timestamp=4811, K=4
+[2025-12-20 14:28:46] [OPERATION] Query executed: timestamp=4812, K=4, results=[夏侯惇(62), 刘备(45), 赵云(27), 香槟(18)]
+[2025-12-20 14:28:47] [OPERATION] Query enqueued: timestamp=37, K=2
+[2025-12-20 14:28:47] [OPERATION] Query executed: timestamp=37, K=2, results=[先登(7), 小时(6)]
+[2025-12-20 14:28:47] [OPERATION] Query enqueued: timestamp=679, K=5
+[2025-12-20 14:28:47] [OPERATION] Query executed: timestamp=679, K=5, results=[刘备(51), 水镜(27), 诸葛亮(19), 三国(18), 听(18)]
+[2025-12-20 14:28:47] [OPERATION] Query enqueued: timestamp=918, K=6
+[2025-12-20 14:28:47] [OPERATION] Query executed: timestamp=918, K=6, results=[刘备(49), 赵云(38), 水镜(25), 徐庶(20), 庞统(20)...]
+[2025-12-20 14:28:47] [OPERATION] Query enqueued: timestamp=1409, K=3
+[2025-12-20 14:28:47] [OPERATION] Query executed: timestamp=1409, K=3, results=[刘备(62), 曹操(45), 庞统(40)]
+[2025-12-20 14:28:47] [OPERATION] Query enqueued: timestamp=1856, K=3
+[2025-12-20 14:28:47] [OPERATION] Query executed: timestamp=1856, K=3, results=[赵云(35), 李典(32), 子龙(26)]
+[2025-12-20 14:28:47] [OPERATION] Query enqueued: timestamp=2564, K=1
+[2025-12-20 14:28:47] [OPERATION] Query executed: timestamp=2564, K=1, results=[曹仁(41)]
+[2025-12-20 14:28:48] [OPERATION] Query enqueued: timestamp=3061, K=7
+[2025-12-20 14:28:48] [OPERATION] Query executed: timestamp=3061, K=7, results=[程昱(75), 徐庶(47), 徐母(40), 曹操(40), 老板(25)...]
+[2025-12-20 14:28:48] [OPERATION] Query enqueued: timestamp=3683, K=4
+[2025-12-20 14:28:48] [OPERATION] Query executed: timestamp=3683, K=4, results=[刘备(62), 徐庶(55), 曹操(28), 没有(21)]
+[2025-12-20 14:28:48] [OPERATION] Query enqueued: timestamp=4127, K=4
+[2025-12-20 14:28:48] [OPERATION] Query enqueued: timestamp=4168, K=4
+[2025-12-20 14:28:48] [OPERATION] Query executed: timestamp=4127, K=4, results=[徐庶(58), 刘备(52), 走(43), 知道(31)]
+[2025-12-20 14:28:48] [OPERATION] Query executed: timestamp=4168, K=4, results=[徐庶(58), 刘备(46), 走(43), 知道(31)]
+[2025-12-20 14:28:48] [OPERATION] Query enqueued: timestamp=4240, K=4
+[2025-12-20 14:28:48] [OPERATION] Query executed: timestamp=4240, K=4, results=[徐庶(62), 刘备(50), 走(45), 知道(31)]
+[2025-12-20 14:28:48] [OPERATION] Query enqueued: timestamp=4622, K=5
+[2025-12-20 14:28:48] [OPERATION] Query executed: timestamp=4622, K=5, results=[徐庶(85), 徐母(51), 曹操(34), 刘备(31), 骂(29)]
+[2025-12-20 14:28:48] [OPERATION] Query enqueued: timestamp=4802, K=3
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=10, K=3
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=10, K=3, results=[经略(9), 讲到(3), 讲(3)]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=133, K=3
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=133, K=3, results=[刘表(13), 经略(11), 江陵(10)]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=404, K=2
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=404, K=2, results=[百姓(24), 曹操(22)]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=1020, K=5
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=1023, K=5, results=[曹操(24), 曹(19), 老板(16), 密码(16), 刘备(14)]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=1378, K=5
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=1378, K=5, results=[刘备(64), 新(59), 僵尸(58), 先生(57), 百姓(45)]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=1730, K=10
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=1730, K=10, results=[刘备(80), 百姓(67), 新(60), 僵尸(58), 先生(57)...]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=2208, K=4
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=2208, K=4, results=[赵云(78), 张飞(43), 糜夫人(42), 刘备(42)]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=2479, K=5
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=2479, K=5, results=[赵云(119), 阿斗(63), 糜夫人(50), 曹操(33), 三国(31)]
+[2025-12-20 14:28:49] [OPERATION] Query enqueued: timestamp=2721, K=4
+[2025-12-20 14:28:49] [OPERATION] Query executed: timestamp=2721, K=4, results=[赵云(120), 阿斗(67), 曹操(63), 曹(44)]
+[2025-12-20 14:28:50] [OPERATION] Query enqueued: timestamp=3067, K=3
+[2025-12-20 14:28:50] [OPERATION] Query executed: timestamp=3067, K=3, results=[赵云(69), 阿斗(67), 曹操(61)]
+[2025-12-20 14:28:50] [OPERATION] Query enqueued: timestamp=3507, K=4
+[2025-12-20 14:28:50] [OPERATION] Query executed: timestamp=3507, K=4, results=[张飞(63), 曹操(53), 夏侯(49), 曹(49)]
+[2025-12-20 14:28:50] [OPERATION] Query enqueued: timestamp=3981, K=5
+[2025-12-20 14:28:50] [OPERATION] Query executed: timestamp=3981, K=5, results=[江东(82), 孙权(64), 鲁肃(50), 刘备(33), 投(29)]
+[2025-12-20 14:28:50] [OPERATION] Query enqueued: timestamp=4387, K=3
+[2025-12-20 14:28:50] [OPERATION] Query executed: timestamp=4387, K=3, results=[江东(69), 诸葛亮(43), 孙权(40)]
+[2025-12-20 14:28:50] [OPERATION] Query enqueued: timestamp=4841, K=6
+[2025-12-20 14:28:50] [OPERATION] Query executed: timestamp=4841, K=6, results=[诸葛亮(40), 曹操(35), 骂(29), 丞相(28), 孙权(23)...]
+[2025-12-20 14:28:50] [OPERATION] Query enqueued: timestamp=5123, K=4
+[2025-12-20 14:28:50] [OPERATION] Query executed: timestamp=5124, K=4, results=[丞相(44), 曹操(43), 诸葛亮(35), 橘子(35)]
+[2025-12-20 14:28:50] [OPERATION] Query enqueued: timestamp=5325, K=3
+[2025-12-20 14:28:50] [OPERATION] Query executed: timestamp=5325, K=3, results=[丞相(41), 橘子(36), 诸葛亮(31)]
+[2025-12-20 14:29:41] [OPERATION] Query enqueued: timestamp=37, K=2
+[2025-12-20 14:29:41] [OPERATION] Query executed: timestamp=37, K=2, results=[先登(7), 小时(6)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=679, K=5
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=679, K=5, results=[刘备(51), 水镜(27), 诸葛亮(19), 三国(18), 听(18)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=918, K=6
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=918, K=6, results=[刘备(49), 赵云(38), 水镜(25), 徐庶(20), 庞统(20)...]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=1409, K=3
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=1409, K=3, results=[刘备(62), 曹操(45), 庞统(40)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=1856, K=3
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=1856, K=3, results=[赵云(35), 李典(32), 子龙(26)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=2564, K=1
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=2564, K=1, results=[曹仁(41)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=3061, K=7
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=3061, K=7, results=[程昱(75), 徐庶(47), 徐母(40), 曹操(40), 老板(25)...]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=3683, K=4
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=3683, K=4, results=[刘备(62), 徐庶(55), 曹操(28), 没有(21)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=4127, K=4
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=4168, K=4
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=4127, K=4, results=[徐庶(58), 刘备(52), 走(43), 知道(31)]
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=4168, K=4, results=[徐庶(58), 刘备(46), 走(43), 知道(31)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=4240, K=4
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=4240, K=4, results=[徐庶(62), 刘备(50), 走(45), 知道(31)]
+[2025-12-20 14:29:42] [OPERATION] Query enqueued: timestamp=4622, K=5
+[2025-12-20 14:29:42] [OPERATION] Query executed: timestamp=4622, K=5, results=[徐庶(85), 徐母(51), 曹操(34), 刘备(31), 骂(29)]
+[2025-12-20 14:29:43] [OPERATION] Query enqueued: timestamp=4802, K=3
+[2025-12-20 14:30:24] [OPERATION] Query enqueued: timestamp=37, K=2
+[2025-12-20 14:30:24] [OPERATION] Query executed: timestamp=37, K=2, results=[先登(7), 小时(6)]
+[2025-12-20 14:30:24] [OPERATION] Query enqueued: timestamp=679, K=5
+[2025-12-20 14:30:24] [OPERATION] Query executed: timestamp=679, K=5, results=[刘备(51), 水镜(27), 诸葛亮(19), 三国(18), 听(18)]
+[2025-12-20 14:30:24] [OPERATION] Query enqueued: timestamp=918, K=6
+[2025-12-20 14:30:24] [OPERATION] Query executed: timestamp=918, K=6, results=[刘备(49), 赵云(38), 水镜(25), 徐庶(20), 庞统(20)...]
+[2025-12-20 14:30:24] [OPERATION] Query enqueued: timestamp=1409, K=3
+[2025-12-20 14:30:24] [OPERATION] Query executed: timestamp=1409, K=3, results=[刘备(62), 曹操(45), 庞统(40)]
+[2025-12-20 14:30:24] [OPERATION] Query enqueued: timestamp=1856, K=3
+[2025-12-20 14:30:24] [OPERATION] Query executed: timestamp=1856, K=3, results=[赵云(35), 李典(32), 子龙(26)]
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=2564, K=1
+[2025-12-20 14:30:25] [OPERATION] Query executed: timestamp=2564, K=1, results=[曹仁(41)]
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=3061, K=7
+[2025-12-20 14:30:25] [OPERATION] Query executed: timestamp=3061, K=7, results=[程昱(75), 徐庶(47), 徐母(40), 曹操(40), 老板(25)...]
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=3683, K=4
+[2025-12-20 14:30:25] [OPERATION] Query executed: timestamp=3683, K=4, results=[刘备(62), 徐庶(55), 曹操(28), 没有(21)]
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=4127, K=4
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=4168, K=4
+[2025-12-20 14:30:25] [OPERATION] Query executed: timestamp=4127, K=4, results=[徐庶(58), 刘备(52), 走(43), 知道(31)]
+[2025-12-20 14:30:25] [OPERATION] Query executed: timestamp=4168, K=4, results=[徐庶(58), 刘备(46), 走(43), 知道(31)]
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=4240, K=4
+[2025-12-20 14:30:25] [OPERATION] Query executed: timestamp=4240, K=4, results=[徐庶(62), 刘备(50), 走(45), 知道(31)]
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=4622, K=5
+[2025-12-20 14:30:25] [OPERATION] Query executed: timestamp=4622, K=5, results=[徐庶(85), 徐母(51), 曹操(34), 刘备(31), 骂(29)]
+[2025-12-20 14:30:25] [OPERATION] Query enqueued: timestamp=4802, K=3
+[2025-12-20 15:49:25] [OPERATION] Query enqueued: timestamp=37, K=2
+[2025-12-20 15:49:25] [OPERATION] Query executed: timestamp=37, K=2, results=[经略(16), 小时(15)]
+[2025-12-20 15:49:25] [OPERATION] Query enqueued: timestamp=679, K=5
+[2025-12-20 15:49:25] [OPERATION] Query executed: timestamp=679, K=5, results=[刘备(113), 水镜(55), 赵云(37), 诸葛亮(37), 小孩(35)]
+[2025-12-20 15:49:25] [OPERATION] Query enqueued: timestamp=918, K=6
+[2025-12-20 15:49:25] [OPERATION] Query executed: timestamp=918, K=6, results=[刘备(112), 赵云(83), 徐庶(55), 水镜(50), 诸葛亮(40)...]
+[2025-12-20 15:49:25] [OPERATION] Query enqueued: timestamp=1409, K=3
+[2025-12-20 15:49:25] [OPERATION] Query executed: timestamp=1409, K=3, results=[刘备(122), 徐庶(101), 曹操(94)]
+[2025-12-20 15:49:25] [OPERATION] Query enqueued: timestamp=1856, K=3
+[2025-12-20 15:49:25] [OPERATION] Query executed: timestamp=1856, K=3, results=[李典(62), 赵云(60), 刘备(58)]
+[2025-12-20 15:49:25] [OPERATION] Query enqueued: timestamp=2564, K=1
+[2025-12-20 15:49:25] [OPERATION] Query executed: timestamp=2564, K=1, results=[曹仁(95)]
+[2025-12-20 15:49:25] [OPERATION] Query enqueued: timestamp=3061, K=7
+[2025-12-20 15:49:25] [OPERATION] Query executed: timestamp=3061, K=7, results=[程昱(156), 曹操(84), 徐庶(82), 徐母(78), 曹(63)...]
+[2025-12-20 15:49:26] [OPERATION] Query enqueued: timestamp=3683, K=4
+[2025-12-20 15:49:26] [OPERATION] Query executed: timestamp=3683, K=4, results=[刘备(106), 徐庶(97), 曹操(54), 没有(34)]
+[2025-12-20 15:49:26] [OPERATION] Query enqueued: timestamp=4127, K=4
+[2025-12-20 15:49:26] [OPERATION] Query enqueued: timestamp=4168, K=4
+[2025-12-20 15:49:26] [OPERATION] Query executed: timestamp=4127, K=4, results=[徐庶(121), 走(101), 刘备(100), 诸葛亮(65)]
+[2025-12-20 15:49:26] [OPERATION] Query executed: timestamp=4168, K=4, results=[徐庶(121), 走(101), 刘备(93), 诸葛亮(63)]
+[2025-12-20 15:49:26] [OPERATION] Query enqueued: timestamp=4240, K=4
+[2025-12-20 15:49:26] [OPERATION] Query executed: timestamp=4240, K=4, results=[徐庶(124), 走(101), 刘备(100), 诸葛亮(61)]
+[2025-12-20 15:49:26] [OPERATION] Query enqueued: timestamp=4622, K=5
+[2025-12-20 15:49:26] [OPERATION] Query executed: timestamp=4622, K=5, results=[徐庶(169), 徐母(92), 刘备(66), 曹操(58), 诸葛亮(56)]
+[2025-12-20 15:49:26] [OPERATION] Query enqueued: timestamp=4802, K=3
+[2025-12-20 15:49:26] [OPERATION] Query executed: timestamp=4802, K=3, results=[徐庶(139), 刘备(87), 诸葛亮(84)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=267, K=6
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=267, K=6, results=[诸葛均(26), 诸葛(22), 诸葛亮(21), 丞相(20), 卧龙(16)...]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=496, K=4
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=496, K=4, results=[刘备(44), 诸葛亮(41), 诸葛均(38), 诸葛(33)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=758, K=7
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=758, K=7, results=[诸葛亮(66), 刘备(52), 丞相(42), 庞统(39), 诸葛均(36)...]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=807, K=3
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=807, K=3, results=[诸葛亮(66), 刘备(54), 庞统(40)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=1350, K=2
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=1350, K=2, results=[刘备(57), 张飞(56)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=1540, K=3
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=1540, K=3, results=[张飞(61), 刘备(56), 睡(46)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=1712, K=5
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=1712, K=5, results=[丞相(93), 睡(85), 二爷(55), 张飞(52), 刘备(49)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=2286, K=6
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=2286, K=6, results=[刘备(90), 荆州(57), 诸葛亮(53), 丞相(40), 曹操(37)...]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=2509, K=10
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=2509, K=10, results=[刘备(128), 诸葛亮(94), 哭(86), 丞相(74), 荆州(61)...]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=2849, K=6
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=2849, K=6, results=[丞相(167), 诸葛亮(119), 刘备(110), 哭(96), 诸葛(45)...]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=2971, K=2
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=2971, K=2, results=[丞相(162), 诸葛亮(96)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=3102, K=2
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=3102, K=2, results=[丞相(119), 诸葛亮(65)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=3638, K=5
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=3638, K=5, results=[诸葛亮(117), 徐庶(117), 刘备(112), 曹操(80), 夏侯惇(72)]
+[2025-12-20 15:50:23] [OPERATION] Query enqueued: timestamp=4309, K=3
+[2025-12-20 15:50:23] [OPERATION] Query executed: timestamp=4309, K=3, results=[刘备(60), 子龙(56), 赵云(44)]
+[2025-12-20 15:50:24] [OPERATION] Query enqueued: timestamp=4610, K=1
+[2025-12-20 15:50:24] [OPERATION] Query executed: timestamp=4610, K=1, results=[夏侯惇(127)]
+[2025-12-20 15:50:24] [OPERATION] Query enqueued: timestamp=4811, K=4
+[2025-12-20 15:50:24] [OPERATION] Query executed: timestamp=4811, K=4, results=[夏侯惇(123), 刘备(95), 赵云(51), 诸葛亮(38)]
+[2025-12-20 15:50:24] [OPERATION] Query enqueued: timestamp=37, K=2
+[2025-12-20 15:50:24] [OPERATION] Query executed: timestamp=37, K=2, results=[经略(16), 小时(15)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=679, K=5
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=679, K=5, results=[刘备(113), 水镜(55), 赵云(37), 诸葛亮(37), 小孩(35)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=918, K=6
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=918, K=6, results=[刘备(112), 赵云(83), 徐庶(55), 水镜(50), 诸葛亮(40)...]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=1409, K=3
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=1409, K=3, results=[刘备(122), 徐庶(101), 曹操(94)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=1856, K=3
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=1856, K=3, results=[李典(62), 赵云(60), 刘备(58)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=2564, K=1
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=2564, K=1, results=[曹仁(95)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=3061, K=7
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=3061, K=7, results=[程昱(156), 曹操(84), 徐庶(82), 徐母(78), 曹(63)...]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=3683, K=4
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=3683, K=4, results=[刘备(106), 徐庶(97), 曹操(54), 没有(34)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=4127, K=4
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=4168, K=4
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=4127, K=4, results=[徐庶(121), 走(101), 刘备(100), 诸葛亮(65)]
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=4168, K=4, results=[徐庶(121), 走(101), 刘备(93), 诸葛亮(63)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=4240, K=4
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=4240, K=4, results=[徐庶(124), 走(101), 刘备(100), 诸葛亮(61)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=4622, K=5
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=4622, K=5, results=[徐庶(169), 徐母(92), 刘备(66), 曹操(58), 诸葛亮(56)]
+[2025-12-20 15:50:25] [OPERATION] Query enqueued: timestamp=4802, K=3
+[2025-12-20 15:50:25] [OPERATION] Query executed: timestamp=4802, K=3, results=[徐庶(139), 刘备(87), 诸葛亮(84)]
+[2025-12-20 15:50:26] [OPERATION] Query enqueued: timestamp=10, K=3
+[2025-12-20 15:50:26] [OPERATION] Query executed: timestamp=10, K=3, results=[经略(14), 长(7), 先登(5)]
+[2025-12-20 15:50:26] [OPERATION] Query enqueued: timestamp=133, K=3
+[2025-12-20 15:50:26] [OPERATION] Query executed: timestamp=133, K=3, results=[江陵(24), 经略(18), 百姓(18)]
+[2025-12-20 15:50:26] [OPERATION] Query enqueued: timestamp=404, K=2
+[2025-12-20 15:50:26] [OPERATION] Query executed: timestamp=404, K=2, results=[曹操(38), 百姓(37)]
+[2025-12-20 15:50:26] [OPERATION] Query enqueued: timestamp=1020, K=5
+[2025-12-20 15:50:26] [OPERATION] Query executed: timestamp=1020, K=5, results=[曹操(54), 曹(33), 老板(31), 刘琮(28), 死(26)]
+[2025-12-20 15:50:26] [OPERATION] Query enqueued: timestamp=1378, K=5
+[2025-12-20 15:50:26] [OPERATION] Query executed: timestamp=1378, K=5, results=[刘备(111), 百姓(98), 新(63), 高祖(60), 僵尸(59)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=1730, K=10
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=1730, K=10, results=[刘备(157), 百姓(126), 糜芳(76), 张飞(71), 新(69)...]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=2208, K=4
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=2208, K=4, results=[赵云(148), 张飞(81), 刘备(80), 糜夫人(79)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=2479, K=5
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=2479, K=5, results=[赵云(207), 阿斗(115), 糜夫人(97), 死(52), 曹操(51)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=2721, K=4
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=2721, K=4, results=[赵云(234), 曹操(119), 阿斗(114), 三国(78)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=3067, K=3
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=3067, K=3, results=[赵云(148), 曹操(127), 阿斗(122)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=3507, K=4
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=3507, K=4, results=[张飞(137), 夏侯(117), 曹操(110), 杰(99)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=3981, K=5
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=3981, K=5, results=[江东(143), 孙权(131), 鲁肃(97), 张昭(70), 刘备(60)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=4387, K=3
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=4387, K=3, results=[江东(127), 诸葛亮(92), 孙权(77)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=4841, K=6
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=4841, K=6, results=[诸葛亮(77), 曹操(68), 丞相(57), 张昭(50), 骂(49)...]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=5123, K=4
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=5123, K=4, results=[曹操(94), 丞相(78), 诸葛亮(70), 橘子(70)]
+[2025-12-20 15:50:27] [OPERATION] Query enqueued: timestamp=5325, K=3
+[2025-12-20 15:50:27] [OPERATION] Query executed: timestamp=5325, K=3, results=[诸葛亮(72), 橘子(71), 丞相(62)]
+[2025-12-20 16:03:35] [OPERATION] Query enqueued: timestamp=267, K=6
+[2025-12-20 16:03:35] [OPERATION] Query executed: timestamp=267, K=6, results=[诸葛均(26), 诸葛(22), 诸葛亮(21), 丞相(20), 卧龙(16)...]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=496, K=4
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=496, K=4, results=[刘备(44), 诸葛亮(41), 诸葛均(38), 诸葛(33)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=758, K=7
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=758, K=7, results=[诸葛亮(66), 刘备(52), 丞相(42), 庞统(39), 诸葛均(36)...]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=807, K=3
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=807, K=3, results=[诸葛亮(66), 刘备(54), 庞统(40)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=1350, K=2
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=1350, K=2, results=[刘备(57), 张飞(56)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=1540, K=3
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=1540, K=3, results=[张飞(61), 刘备(56), 睡(46)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=1712, K=5
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=1712, K=5, results=[丞相(93), 睡(85), 二爷(55), 张飞(52), 刘备(49)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=2286, K=6
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=2286, K=6, results=[刘备(90), 荆州(57), 诸葛亮(53), 丞相(40), 曹操(37)...]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=2509, K=10
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=2509, K=10, results=[刘备(128), 诸葛亮(94), 哭(86), 丞相(74), 荆州(61)...]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=2849, K=6
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=2849, K=6, results=[丞相(167), 诸葛亮(119), 刘备(110), 哭(96), 诸葛(45)...]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=2971, K=2
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=2971, K=2, results=[丞相(162), 诸葛亮(96)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=3102, K=2
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=3102, K=2, results=[丞相(119), 诸葛亮(65)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=3638, K=5
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=3638, K=5, results=[诸葛亮(117), 徐庶(117), 刘备(112), 曹操(80), 夏侯惇(72)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=4309, K=3
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=4309, K=3, results=[刘备(60), 子龙(56), 赵云(44)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=4610, K=1
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=4610, K=1, results=[夏侯惇(127)]
+[2025-12-20 16:03:36] [OPERATION] Query enqueued: timestamp=4811, K=4
+[2025-12-20 16:03:36] [OPERATION] Query executed: timestamp=4811, K=4, results=[夏侯惇(123), 刘备(95), 赵云(51), 诸葛亮(38)]
+[2025-12-20 16:03:37] [OPERATION] Query enqueued: timestamp=37, K=2
+[2025-12-20 16:03:37] [OPERATION] Query executed: timestamp=37, K=2, results=[经略(16), 小时(15)]
+[2025-12-20 16:03:37] [OPERATION] Query enqueued: timestamp=679, K=5
+[2025-12-20 16:03:37] [OPERATION] Query executed: timestamp=679, K=5, results=[刘备(113), 水镜(55), 赵云(37), 诸葛亮(37), 小孩(35)]
+[2025-12-20 16:03:37] [OPERATION] Query enqueued: timestamp=918, K=6
+[2025-12-20 16:03:37] [OPERATION] Query executed: timestamp=918, K=6, results=[刘备(112), 赵云(83), 徐庶(55), 水镜(50), 诸葛亮(40)...]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=1409, K=3
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=1409, K=3, results=[刘备(122), 徐庶(101), 曹操(94)]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=1856, K=3
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=1856, K=3, results=[李典(62), 赵云(60), 刘备(58)]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=2564, K=1
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=2564, K=1, results=[曹仁(95)]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=3061, K=7
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=3061, K=7, results=[程昱(156), 曹操(84), 徐庶(82), 徐母(78), 曹(63)...]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=3683, K=4
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=3683, K=4, results=[刘备(106), 徐庶(97), 曹操(54), 没有(34)]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=4127, K=4
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=4168, K=4
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=4127, K=4, results=[徐庶(121), 走(101), 刘备(100), 诸葛亮(65)]
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=4168, K=4, results=[徐庶(121), 走(101), 刘备(93), 诸葛亮(63)]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=4240, K=4
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=4240, K=4, results=[徐庶(124), 走(101), 刘备(100), 诸葛亮(61)]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=4622, K=5
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=4622, K=5, results=[徐庶(169), 徐母(92), 刘备(66), 曹操(58), 诸葛亮(56)]
+[2025-12-20 16:03:38] [OPERATION] Query enqueued: timestamp=4802, K=3
+[2025-12-20 16:03:38] [OPERATION] Query executed: timestamp=4802, K=3, results=[徐庶(139), 刘备(87), 诸葛亮(84)]
+[2025-12-20 16:03:39] [OPERATION] Query enqueued: timestamp=10, K=3
+[2025-12-20 16:03:39] [OPERATION] Query executed: timestamp=10, K=3, results=[经略(14), 长(7), 先登(5)]
+[2025-12-20 16:03:39] [OPERATION] Query enqueued: timestamp=133, K=3
+[2025-12-20 16:03:39] [OPERATION] Query executed: timestamp=133, K=3, results=[江陵(24), 经略(18), 百姓(18)]
+[2025-12-20 16:03:39] [OPERATION] Query enqueued: timestamp=404, K=2
+[2025-12-20 16:03:39] [OPERATION] Query executed: timestamp=404, K=2, results=[曹操(38), 百姓(37)]
+[2025-12-20 16:03:39] [OPERATION] Query enqueued: timestamp=1020, K=5
+[2025-12-20 16:03:39] [OPERATION] Query executed: timestamp=1020, K=5, results=[曹操(54), 曹(33), 老板(31), 刘琮(28), 死(26)]
+[2025-12-20 16:03:39] [OPERATION] Query enqueued: timestamp=1378, K=5
+[2025-12-20 16:03:39] [OPERATION] Query executed: timestamp=1378, K=5, results=[刘备(111), 百姓(98), 新(63), 高祖(60), 僵尸(59)]
+[2025-12-20 16:03:39] [OPERATION] Query enqueued: timestamp=1730, K=10
+[2025-12-20 16:03:39] [OPERATION] Query executed: timestamp=1730, K=10, results=[刘备(157), 百姓(126), 糜芳(76), 张飞(71), 新(69)...]
+[2025-12-20 16:03:39] [OPERATION] Query enqueued: timestamp=2208, K=4
+[2025-12-20 16:03:39] [OPERATION] Query executed: timestamp=2208, K=4, results=[赵云(148), 张飞(81), 刘备(80), 糜夫人(79)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=2479, K=5
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=2479, K=5, results=[赵云(207), 阿斗(115), 糜夫人(97), 死(52), 曹操(51)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=2721, K=4
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=2721, K=4, results=[赵云(234), 曹操(119), 阿斗(114), 三国(78)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=3067, K=3
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=3067, K=3, results=[赵云(148), 曹操(127), 阿斗(122)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=3507, K=4
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=3507, K=4, results=[张飞(137), 夏侯(117), 曹操(110), 杰(99)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=3981, K=5
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=3981, K=5, results=[江东(143), 孙权(131), 鲁肃(97), 张昭(70), 刘备(60)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=4387, K=3
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=4387, K=3, results=[江东(127), 诸葛亮(92), 孙权(77)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=4841, K=6
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=4841, K=6, results=[诸葛亮(77), 曹操(68), 丞相(57), 张昭(50), 骂(49)...]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=5123, K=4
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=5123, K=4, results=[曹操(94), 丞相(78), 诸葛亮(70), 橘子(70)]
+[2025-12-20 16:03:40] [OPERATION] Query enqueued: timestamp=5325, K=3
+[2025-12-20 16:03:40] [OPERATION] Query executed: timestamp=5325, K=3, results=[诸葛亮(72), 橘子(71), 丞相(62)]

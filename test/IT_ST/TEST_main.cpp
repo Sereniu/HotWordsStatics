@@ -19,5 +19,5 @@ int main(){
  * g++ TEST_main.cpp ../../src/InputThread.cpp ../../src/InputHandler.cpp ../../src/TextProcessor.cpp ../../src/SlidingWindow.cpp ../../src/QueryHandle.cpp -o test_runner -I../../src -std=c++17
  * ./test_runner
  * 
- * g++ TEST_main.cpp     ../../src/InputThread.cpp     ../../src/InputHandler.cpp     ../../src/TextProcessor.cpp     ../../src/StatisticsThread.cpp     ../../src/SlidingWindow.cpp     ../../src/QueryHandler.cpp     -o test_runner     -I../../src     -std=c++17     -lpthread && ./test_runner
+ * g++ TEST_main.cpp     ../../src/InputThread.cpp     ../../src/InputHandler.cpp     ../../src/TextProcessor.cpp     ../../src/StatisticsThread.cpp     ../../src/SlidingWindow.cpp     ../../src/QueryHandler.cpp     -o test_runner     -std=c++17     -lpthread  -I ../../include && ./test_runner
  */
